@@ -38,4 +38,12 @@ public class TrackService {
     public List<Track> findByTitle(@PathParam("title") String title) {
         return trackDAO.findByTitle(title);
     }
+
+    @GET
+    @Path("/id/{id}")
+    @Produces("application/json")
+    public Track findById(@PathParam("id") String id) {
+        return trackDAO.findById(Integer.parseInt(id));
+    }
+
 }

@@ -6,7 +6,6 @@ public class Track {
             url;
     private int trackId;
     private long duration;
-    private boolean offlineAvailable;
     private TrackType trackType;
 
     public Track() {
@@ -19,10 +18,6 @@ public class Track {
         this.url = url;
         this.duration = duration;
         this.trackType = trackType;
-    }
-
-    public boolean isOfflineAvailable() {
-        return offlineAvailable;
     }
 
     public int getTrackId() {
@@ -61,17 +56,7 @@ public class Track {
         this.duration = duration;
     }
 
-    //todo track type
     public TrackType getTrackType() {
         return trackType;
-    }
-
-    public void setTrackType(TrackType trackType) {
-        this.trackType = trackType;
-    }
-
-
-    public void toggleOfflineAvailable() {
-        this.offlineAvailable = !offlineAvailable;
     }
 }

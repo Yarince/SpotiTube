@@ -105,7 +105,7 @@ public class PlaylistDAOMySQL implements IPlaylistDAO {
             preparedStatement.setString(1, playlist.getName());
             preparedStatement.setInt(2, playlist.getPlaylistId());
             for (PlaylistEntry playlistEntry : playlist.getPlaylistEntries()) {
-                trackInPlaylistDAO.add(playlistEntry.getTrack(), playlist.getPlaylistId());
+                trackInPlaylistDAO.add(playlistEntry, playlist.getPlaylistId());
             }
             preparedStatement.execute();
         } catch (SQLException e) {
@@ -147,13 +147,15 @@ public class PlaylistDAOMySQL implements IPlaylistDAO {
         }
     }
 
-    /**
-     * @param playlist Playlist from wich tracks to add to the database
-     */
+    @Override
+    public void addTrack(PlaylistEntry playlistEntry, int playlistId) {
+        trackInPlaylistDAO.add(playlistEntry, playlistId);
+    }
+
     @Override
     public void addTrack(Playlist playlist) {
         for (PlaylistEntry playlistEntry : playlist.getPlaylistEntries()) {
-            trackInPlaylistDAO.add(playlistEntry.getTrack(), playlist.getPlaylistId());
+            trackInPlaylistDAO.add(playlistEntry, playlist.getPlaylistId());
         }
     }
 

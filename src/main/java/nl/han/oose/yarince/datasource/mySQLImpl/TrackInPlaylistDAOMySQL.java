@@ -3,7 +3,6 @@ package nl.han.oose.yarince.datasource.mySQLImpl;
 import nl.han.oose.yarince.datasource.IConnection;
 import nl.han.oose.yarince.datasource.ITrackInPlaylistDAO;
 import nl.han.oose.yarince.domain.PlaylistEntry;
-import nl.han.oose.yarince.domain.Track;
 
 import javax.enterprise.inject.Default;
 import javax.inject.Inject;
@@ -28,14 +27,14 @@ public class TrackInPlaylistDAOMySQL implements ITrackInPlaylistDAO {
     private TrackDAOMySQL trackDAOMySQL;
 
     @Override
-    public void add(Track track, int playlistID) {
+    public void add(PlaylistEntry playlistEntry, int playlistID) {
         try (
                 Connection con = connection.getConnection();
                 PreparedStatement preparedStatement = con.prepareStatement("INSERT IGNORE INTO track_in_playlist (PLAYLIST_ID, TRACK_ID,OFFLINE_AVAILABLE) VALUES (?,?,?)");
         ) {
             preparedStatement.setInt(1, playlistID);
-            preparedStatement.setInt(2, track.getTrackId());
-            preparedStatement.setBoolean(3, track.isOfflineAvailable());
+            preparedStatement.setInt(2, playlistEntry.getTrack().getTrackId());
+            preparedStatement.setBoolean(3, playlistEntry.isOfflineAvailable());
             preparedStatement.execute();
             System.out.println("Track in playlist Added!");
         } catch (SQLException e) {

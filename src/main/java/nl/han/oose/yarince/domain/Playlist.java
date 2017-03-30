@@ -23,7 +23,7 @@ public class Playlist {
     }
 
     public long getTotalLength() {
-       long totalLength = 0;
+        long totalLength = 0;
         for (PlaylistEntry playlistEntry : this.playlistEntries) {
             totalLength += playlistEntry.getTrack().getDuration();
         }
@@ -34,7 +34,7 @@ public class Playlist {
         this.name = name;
     }
 
-    //TODO toevoegen fix
+    //TODO toevoegen HIER MEE ID TOEVOEGEN IN DB
     public void addTrack(Track track, boolean offlineAvailable) {
         playlistEntries.add(new PlaylistEntry(track, offlineAvailable));
     }

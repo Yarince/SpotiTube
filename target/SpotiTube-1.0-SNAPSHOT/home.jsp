@@ -32,19 +32,19 @@
                         <%--@elvariable id="PLAYLIST_BY_OWNER" type="java.util.List"--%>
                     <c:choose>
                         <c:when test="${not empty PLAYLIST_BY_OWNER}">
-                            <c:forEach items="${PLAYLIST_BY_OWNER}" var="playlist">
+                            <c:forEach items="${PLAYLIST_BY_OWNER}" var="PLAYLIST">
                                 <tr>
                                         <%--class="col-xs-12 col-sm-4 col-md-2">--%>
                                     <td class="productbox">
                                             <%--<img src="http://lorempixel.com/460/250/" class="img-responsive">--%>
-                                        <div class="producttitle">Name: <c:out value="${playlist.name}"/></div>
+                                        <div class="producttitle">Name: <c:out value="${PLAYLIST.name}"/></div>
                                         <p class="text-justify">Owner: <c:out
-                                                value="${playlist.owner}"/></p>
+                                                value="${PLAYLIST.owner}"/></p>
                                     <td>
                                         <p class="text-sm-center">Length:
-                                            <c:out value="${playlist.totalLength}"/> min.</p>
+                                            <c:out value="${PLAYLIST.totalLength}"/> min.</p>
                                         <p class="text-sm-left">
-                                            <c:forEach begin="0" end="2" items="${playlist.playlistEntries}"
+                                            <c:forEach begin="0" end="2" items="${PLAYLIST.playlistEntries}"
                                                        var="playlistEntry" varStatus="loop">
                                                 ${loop.index}: <c:out value="${playlistEntry.track.title}"/> - <c:out
                                                     value="${playlistEntry.track.performer}"/> <br>
@@ -53,17 +53,22 @@
                                     </td>
                                     <td class="productprice">
                                         <div class="pull-right">
-                                            <form action="playlist/details"
-                                                  method="post">
+                                            <form action="playlist/details" method="post">
                                                 <button type="submit" name="playlistId"
-                                                        value="<c:out value="${playlist.playlistId}"/>"
+                                                        value="<c:out value="${PLAYLIST.playlistId}"/>"
                                                         class="btn btn-success btm-sm">Edit playlist
                                                 </button>
                                             </form>
                                             <form action="" onclick="window.location.reload()" method="post">
                                                 <button type="submit" name="deletePlaylist"
-                                                        value="<c:out value="${playlist.playlistId}"/>"
+                                                        value="<c:out value="${PLAYLIST.playlistId}"/>"
                                                         class="btn btn-success btm-sm">Delete playlist
+                                                </button>
+                                            </form>
+                                            <form method="post" action="playlist/details/addTrack">
+                                                <button type="submit" name="playlistId"
+                                                        value="<c:out value="${PLAYLIST.playlistId}"/>"
+                                                        class="btn btn-success btm-sm">Add tracks
                                                 </button>
                                             </form>
                                         </div>

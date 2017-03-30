@@ -32,7 +32,6 @@ public class PlaylistViewPageController extends HttpServlet {
 
         if (playlistId != null) {
             WebClient webClient = WebClient.create("http://localhost:8080/").path("/playlists/id/" + playlistId).accept("application/json");
-            System.out.println("playlist: " + webClient.get(Playlist.class).getName());
             req.setAttribute("PLAYLIST", webClient.get(Playlist.class));
 
             WebClient webClient2 = WebClient.create("http://localhost:8080/").path("/tracks/playlist/" + playlistId).accept("application/json");

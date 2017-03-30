@@ -1,7 +1,9 @@
 package nl.han.oose.yarince.service;
 
 import nl.han.oose.yarince.datasource.IPlaylistDAO;
+import nl.han.oose.yarince.datasource.ITrackInPlaylistDAO;
 import nl.han.oose.yarince.domain.Playlist;
+import nl.han.oose.yarince.domain.PlaylistEntry;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -39,24 +41,33 @@ public class PlaylistService {
     @Consumes("application/json")
     public String add(Playlist playlist) {
         playlistDAO.add(playlist);
-        return "Name: " +playlist.getName() + " owner: " + playlist.getOwner();
+        return "Name: " + playlist.getName() + " owner: " + playlist.getOwner();
     }
-
-
 
     @POST
     @Path("/track")
     @Consumes("application/json")
     @Produces("application/json")
-    public String addTrack(Playlist playlist){
+    public String addTrack(Playlist playlist) {
         playlistDAO.addTrack(playlist);
-        return "Tracks added!";
+        return "Track added!";
+    }
+
+    //TODO TEMP
+    @Inject
+    ITrackInPlaylistDAO trackInPlaylistDAO;
+
+    @GET
+    @Path("/track")
+    @Produces("application/json")
+    public PlaylistEntry getTrack() {
+        return trackInPlaylistDAO.getByPlaylistId(1).get(0);
     }
 
     @POST
     @Path("/delete")
     @Consumes("application/json")
-    public void delete(Playlist playlist){
+    public void delete(Playlist playlist) {
         playlistDAO.delete(playlist.getPlaylistId());
     }
 }

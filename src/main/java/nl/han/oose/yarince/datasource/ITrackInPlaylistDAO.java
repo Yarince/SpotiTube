@@ -1,7 +1,6 @@
 package nl.han.oose.yarince.datasource;
 
 import nl.han.oose.yarince.domain.PlaylistEntry;
-import nl.han.oose.yarince.domain.Track;
 
 import java.util.List;
 
@@ -10,7 +9,7 @@ import java.util.List;
  */
 public interface ITrackInPlaylistDAO {
 
-    void add(Track trackID, int playlistID);
+    void add(PlaylistEntry playlistEntry, int playlistID);
 
     void deleteByPlaylist(int playlistID);
 
