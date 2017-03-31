@@ -24,7 +24,7 @@
                         Owner: <c:out value="${PLAYLIST.owner}"/>
                     </div>
                 </div>
-                <form method="post" action="/details/addTrack"> TrackName
+                <form method="post" action="<%=request.getContextPath()%>/playlist/details/addTrack"> TrackName
                     <button type="submit" name="playlistId"
                             value="<c:out value="${PLAYLIST.playlistId}"/>"
                             class="btn btn-success btm-sm">Add tracks
@@ -47,22 +47,22 @@
                                                 <td>
                                                     Performer: <c:out value="${track.performer}"/> <br>
                                                 </td>
-                                                <c:choose>
-                                                    <c:when test="${track.trackType.toString() == 'Song'}">
-                                                        <td><%//todo check if song then print info %>
-                                                            tracktype: <c:out value="${track.trackType.toString()}"/>
-                                                                <%--<c:out value="${track.}"/>--%>
-                                                            song info
-                                                        </td>
-                                                    </c:when>
-                                                    <c:otherwise>
-                                                        <td>
-                                                            tracktype: <c:out value="${track.trackType.toString()}"/>
-                                                                <%--<c:out value="${track.}"--%>
-                                                            video info
-                                                        </td>
-                                                    </c:otherwise>
-                                                </c:choose>
+                                                <%--<c:choose>--%>
+                                                    <%--<c:when test="${track.trackType.toString() == 'Song'}">--%>
+                                                        <%--<td><%//todo check if song then print info %>--%>
+                                                            <%--tracktype: <c:out value="${track.trackType.toString()}"/>--%>
+                                                                <%--&lt;%&ndash;<c:out value="${track.}"/>&ndash;%&gt;--%>
+                                                            <%--song info--%>
+                                                        <%--</td>--%>
+                                                    <%--</c:when>--%>
+                                                    <%--<c:otherwise>--%>
+                                                        <%--<td>--%>
+                                                            <%--tracktype: <c:out value="${track.trackType.toString()}"/>--%>
+                                                                <%--&lt;%&ndash;<c:out value="${track.}"&ndash;%&gt;--%>
+                                                            <%--video info--%>
+                                                        <%--</td>--%>
+                                                    <%--</c:otherwise>--%>
+                                                <%--</c:choose>--%>
                                             </tr>
                                         </c:forEach>
                                     </table>
@@ -81,9 +81,9 @@
         </div>
     </c:when>
     <c:otherwise>
-        <meta http-equiv="refresh" content="0; url='../index.html'"/>
+        <meta http-equiv="refresh" content="0; url='<%=request.getContextPath()%>/index.html'"/>
         <div class="alert alert-warning text-center">
-            <p><a href="../index.html">Please login!</a></p>
+            <p><a href="<%=request.getContextPath()%>/index.html">Please login!</a></p>
         </div>
     </c:otherwise>
 </c:choose>

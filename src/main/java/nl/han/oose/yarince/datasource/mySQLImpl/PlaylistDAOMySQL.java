@@ -123,8 +123,8 @@ public class PlaylistDAOMySQL implements IPlaylistDAO {
                 PreparedStatement preparedStatement = con.prepareStatement("DELETE FROM PLAYLIST WHERE PLAYLIST_ID = ?");
         ) {
             preparedStatement.setInt(1, playlistId);
-            preparedStatement.execute();
             trackInPlaylistDAO.deleteByPlaylist(playlistId);
+            preparedStatement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
         }

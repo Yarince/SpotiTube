@@ -11,6 +11,7 @@ import javax.ws.rs.Produces;
 import java.util.List;
 
 /**
+ * Project name: SpotiTube.
  * Created by Yarince on 23/03/2017.
  */
 @Path("/tracks")
@@ -23,6 +24,13 @@ public class TrackService {
     @Produces("application/json")
     public List<Track> getAllTracks() {
         return trackDAO.getAllTracks();
+    }
+
+    @GET
+    @Path("/notInPlaylist/{id}")
+    @Produces("application/json")
+    public List<Track> getUnusedTracks(@PathParam("id") String playlistId) {
+        return trackDAO.getUnusedTracks(Integer.parseInt(playlistId));
     }
 
     @GET

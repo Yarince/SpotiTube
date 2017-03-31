@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collection;
 
 /**
  * Project name: SpotiTube.
@@ -34,17 +36,30 @@ public class AddTrackPageController extends HttpServlet {
 
     private void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String playlistId = req.getParameter("playlistId");
-        System.out.println("playlistId = " + playlistId);
         if (playlistId != null) {
             WebClient webClient1 = WebClient.create("http://localhost:8080/").path("/playlists/id/" + playlistId).accept("application/json");
             req.setAttribute("PLAYLIST", webClient1.get(Playlist.class));
 
-            WebClient webClient2 = WebClient.create("http://localhost:8080/").path("/tracks").accept("application/json");
-            req.setAttribute("TRACKS", webClient2.getCollection(Track.class));
+            WebClient webClient2 = WebClient.create("http://localhost:8080/").path("/tracks/notInPlaylist/" + playlistId).accept("application/json");
+            Collection<? extends Track> tracksUnassigned = webClient2.getCollection(Track.class);
+            Collection<Track> tracks = new ArrayList<>();
 
+//            for (Track track : tracksUnassigned) {
+//                switch (track.getTrackType()) {
+//                    case Video:
+//                        Video video = (Video) track;
+//                        System.out.println("video.getPublicationDate() = " + video.getPublicationDate());
+//                        break;
+//                    case Song:
+//                        Song song = (Song) track;
+//                        System.out.println("video.getAlbum() = " + song.getAlbum());
+//                        break;
+//                }
+//            }
 
+            req.setAttribute("TRACKS", tracksUnassigned);
             String trackId = req.getParameter("trackId");
-            String offlineAvailable = req.getParameter("offlineAvailable");
+            String offlineAvailable = req.getParameter("offlineAvailable" + trackId);
 
             if (trackId != null) {
 
@@ -52,32 +67,16 @@ public class AddTrackPageController extends HttpServlet {
                 WebResource webResource = client.resource("http://localhost:8080/playlists/track");
                 ObjectMapper mapper = new ObjectMapper();
 
-                WebClient webClient3 = WebClient.create("http://localhost:8080/").path("/playlists/id/" + playlistId).accept("application/json");
-                Playlist playlist = webClient3.get(Playlist.class);
-
-                WebClient webClient4 = WebClient.create("http://localhost:8080/").path("/tracks/id/" + trackId).accept("application/json");
-                Track track = webClient4.get(Track.class);
-
-                String trackAsString = mapper.writeValueAsString(track);
-                String playlistAsString = mapper.writeValueAsString(playlist);
-
-                System.out.println("trackAsString = " + trackAsString);
-                System.out.println("playlistAsString = " + playlistAsString);
-                //TODO HIER BEN IK GEBLEVEN!
-
-                String input = "{\"playlistId\":1,\"owner\":\"Yarince\",\"name\":\"Mooie liedjes\",\"totalLength\":1287," +
-                        "\"playlistEntries\":[{" +
-                        "\"track\":{\"performer\":\"BartTheAmazing\",\"title\":\"Best Song Ever Vol. 2\",\"url\":\"/Bart/swek-liedje2\",\"trackId\":2,\"duration\":154,\"trackType\":\"Video\"},\"offlineAvailable\":false}]\"}";
+                String input = "{\"playlistId\":" + playlistId + ",\"playlistEntries\":[{\"track\":{\"trackId\":" + trackId + "},\"offlineAvailable\":" + Boolean.parseBoolean(offlineAvailable) + "}]}";
                 ClientResponse response = webResource.type("application/json").post(ClientResponse.class, input);
+
                 System.out.println(trackId + " - Track added!");
+
                 //check if response is successful
                 if (response.getStatus() > 200 && response.getStatus() < 300) {
                     throw new RuntimeException("Failed: HTTP error code:" + response.getStatus());
                 }
-
-
             }
-
             req.getRequestDispatcher("../../addTrack.jsp").forward(req, resp);
         }
     }

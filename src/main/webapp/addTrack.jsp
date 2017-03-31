@@ -33,31 +33,43 @@
                                     Title: <c:out value="${track.title}"/> <br>
                                     Performer: <c:out value="${track.performer}"/> <br>
                                     Duration: <c:out value="${track.duration}"/>
-
                                 </td>
+                                    <%--<c:choose>--%>
+                                    <%--<c:when test="${track.trackType.toString() == 'Song'}">--%>
+                                    <%--&lt;%&ndash;@elvariable id="track" type="nl.han.oose.yarince.domain.Song"&ndash;%&gt;--%>
+                                    <%--<td>--%>
+                                    <%--Track type:<c:out value="${track.trackType.toString()}"/> <br>--%>
+                                    <%--Album: <c:out value="${track.album}"/>--%>
+                                    <%--</td>--%>
+                                    <%--</c:when>--%>
+                                    <%--<c:otherwise>--%>
+                                    <%--&lt;%&ndash;@elvariable id="track" type="nl.han.oose.yarince.domain.Video"&ndash;%&gt;--%>
+                                    <%--<td>--%>
+                                    <%--whoops--%>
+                                    <%--&lt;%&ndash;Track type:<c:out value="${track.trackType.toString()}"/> <br>&ndash;%&gt;--%>
+                                    <%--&lt;%&ndash;Duration: <c:out value="${track.duration}"/><br>&ndash;%&gt;--%>
+                                    <%--&lt;%&ndash;Playcount: <c:out value="${track.playCount}"/><br>&ndash;%&gt;--%>
+                                    <%--&lt;%&ndash;Publication date: <c:out value="${track.publicationDate}"/><br>&ndash;%&gt;--%>
+                                    <%--</td>--%>
+                                    <%--</c:otherwise>--%>
+                                    <%--</c:choose>--%>
                                 <td>
+                                    <%--TODO maak deze pagina--%>
+                                    <form method="post" action="<%=request.getContextPath()%>/trackDetails">
+                                        <input type="hidden" name="playlistId"
+                                               value="<c:out value="${PLAYLIST.playlistId}"/>">
+                                        <button type="submit" name="trackId"
+                                                value="<c:out value="${track.trackId}"/>"
+                                                class="btn btn-success btm-sm">Details
+                                        </button>
+                                    </form>
                                 </td>
-                                <c:choose>
-                                    <c:when test="${track.trackType.toString() == 'Song'}">
-                                        <td><%//todo check if song then print info %>
-                                            <c:out value="${track.trackType}"/>
-                                            song info
-                                        </td>
-                                    </c:when>
-                                    <c:otherwise>
-                                        <td>
-                                            <c:out value="${track.trackType.toString()}"/>
-                                                <%--<c:out value="${track.}"--%>
-                                            video info
-                                        </td>
-                                    </c:otherwise>
-                                </c:choose>
                                 <td>
                                     <form method="post">
                                         <input type="hidden" name="playlistId"
                                                value="<c:out value="${PLAYLIST.playlistId}"/>">
                                         <label>Offline Available:
-                                            <input type="checkbox" name="offlineAvailable" value="Offline Available">
+                                            <input type="checkbox" name="offlineAvailable${track.trackId}" value="true">
                                         </label>
                                         <button type="submit" name="trackId"
                                                 value="<c:out value="${track.trackId}"/>"

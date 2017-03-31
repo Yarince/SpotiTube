@@ -5,6 +5,7 @@ import nl.han.oose.yarince.domain.PlaylistEntry;
 import java.util.List;
 
 /**
+ * Project name: SpotiTube.
  * Created by Yarince on 24/03/2017.
  */
 public interface ITrackInPlaylistDAO {

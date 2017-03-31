@@ -56,6 +56,25 @@ public class HomeViewPageController extends HttpServlet {
                     throw new RuntimeException("Failed: HTTP error code:" + response.getStatus());
                 }
                 System.out.println(input + "\n" + "Message recieved");
+
+
+            }
+            String deletePlaylistId = req.getParameter("deletePlaylist");
+
+            if (deletePlaylistId != null) {
+
+                Client client = Client.create();
+                WebResource webResource = client.resource("http://localhost:8080/playlist/delete");
+
+                String input = "{\"playlistId\":" + deletePlaylistId + "}";
+
+                ClientResponse response = webResource.type("application/json").post(ClientResponse.class, input);
+
+                //check if response is successful
+                if (response.getStatus() > 200 && response.getStatus() < 300) {
+                    throw new RuntimeException("Failed: HTTP error code:" + response.getStatus());
+                }
+                System.out.println(input + "\n" + "Message recieved");
             }
         }
         req.getRequestDispatcher("home.jsp").forward(req, resp);

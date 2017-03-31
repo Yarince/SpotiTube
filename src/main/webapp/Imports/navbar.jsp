@@ -2,13 +2,13 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <a class="navbar-brand" href="../home">SpotiTube</a>
+            <a class="navbar-brand" href="<%=request.getContextPath()%>/home">SpotiTube</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="../home"><i class="fa fa-list" aria-hidden="true"></i> Playlists</a>
+                    <a href="<%=request.getContextPath()%>/home"><i class="fa fa-list" aria-hidden="true"></i> Playlists</a>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">

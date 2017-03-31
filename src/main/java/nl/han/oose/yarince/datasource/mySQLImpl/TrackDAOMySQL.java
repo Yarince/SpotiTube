@@ -43,6 +43,24 @@ public class TrackDAOMySQL implements ITrackDAO {
     }
 
     @Override
+    public List<Track> getUnusedTracks(int playlistId) {
+
+        List<Track> resultList = new ArrayList<>();
+        try (
+                Connection con = connection.getConnection();
+                PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM TRACK WHERE TRACK_ID NOT IN (SELECT TRACK_ID FROM track_in_playlist WHERE PLAYLIST_ID = ?)");
+        ) {
+            preparedStatement.setInt(1,playlistId);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next())
+                resultList.add(getTrackByResultSet(resultSet));
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return resultList;
+    }
+
+    @Override
     public List<Track> findByTitle(String title) {
         List<Track> resultList = new ArrayList<>();
         try (

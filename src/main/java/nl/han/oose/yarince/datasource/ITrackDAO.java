@@ -8,6 +8,8 @@ public interface ITrackDAO {
 
     List<Track> getAllTracks();
 
+    List<Track> getUnusedTracks(int playlistId);
+
     List<Track> findByTitle(String title);
 
     Track findById(int id);

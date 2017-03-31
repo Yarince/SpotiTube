@@ -1,9 +1,7 @@
 package nl.han.oose.yarince.service;
 
 import nl.han.oose.yarince.datasource.IPlaylistDAO;
-import nl.han.oose.yarince.datasource.ITrackInPlaylistDAO;
 import nl.han.oose.yarince.domain.Playlist;
-import nl.han.oose.yarince.domain.PlaylistEntry;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -51,17 +49,6 @@ public class PlaylistService {
     public String addTrack(Playlist playlist) {
         playlistDAO.addTrack(playlist);
         return "Track added!";
-    }
-
-    //TODO TEMP
-    @Inject
-    ITrackInPlaylistDAO trackInPlaylistDAO;
-
-    @GET
-    @Path("/track")
-    @Produces("application/json")
-    public PlaylistEntry getTrack() {
-        return trackInPlaylistDAO.getByPlaylistId(1).get(0);
     }
 
     @POST

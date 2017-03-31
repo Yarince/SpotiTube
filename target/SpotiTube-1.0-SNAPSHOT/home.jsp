@@ -34,9 +34,7 @@
                         <c:when test="${not empty PLAYLIST_BY_OWNER}">
                             <c:forEach items="${PLAYLIST_BY_OWNER}" var="PLAYLIST">
                                 <tr>
-                                        <%--class="col-xs-12 col-sm-4 col-md-2">--%>
                                     <td class="productbox">
-                                            <%--<img src="http://lorempixel.com/460/250/" class="img-responsive">--%>
                                         <div class="producttitle">Name: <c:out value="${PLAYLIST.name}"/></div>
                                         <p class="text-justify">Owner: <c:out
                                                 value="${PLAYLIST.owner}"/></p>
@@ -46,14 +44,14 @@
                                         <p class="text-sm-left">
                                             <c:forEach begin="0" end="2" items="${PLAYLIST.playlistEntries}"
                                                        var="playlistEntry" varStatus="loop">
-                                                ${loop.index}: <c:out value="${playlistEntry.track.title}"/> - <c:out
+                                                ${loop.index+1}: <c:out value="${playlistEntry.track.title}"/> - <c:out
                                                     value="${playlistEntry.track.performer}"/> <br>
                                             </c:forEach>
                                         </p>
                                     </td>
                                     <td class="productprice">
                                         <div class="pull-right">
-                                            <form action="playlist/details" method="post">
+                                            <form action="<%=request.getContextPath()%>/playlist/details" method="post">
                                                 <button type="submit" name="playlistId"
                                                         value="<c:out value="${PLAYLIST.playlistId}"/>"
                                                         class="btn btn-success btm-sm">Edit playlist
@@ -65,7 +63,7 @@
                                                         class="btn btn-success btm-sm">Delete playlist
                                                 </button>
                                             </form>
-                                            <form method="post" action="playlist/details/addTrack">
+                                            <form method="post" action="<%=request.getContextPath()%>/playlist/details/addTrack">
                                                 <button type="submit" name="playlistId"
                                                         value="<c:out value="${PLAYLIST.playlistId}"/>"
                                                         class="btn btn-success btm-sm">Add tracks
