@@ -30,7 +30,7 @@ public class TrackInPlaylistDAOMySQL implements ITrackInPlaylistDAO {
     public void add(PlaylistEntry playlistEntry, int playlistID) {
         try (
                 Connection con = connection.getConnection();
-                PreparedStatement preparedStatement = con.prepareStatement("INSERT IGNORE INTO track_in_playlist (PLAYLIST_ID, TRACK_ID,OFFLINE_AVAILABLE) VALUES (?,?,?)");
+                PreparedStatement preparedStatement = con.prepareStatement("INSERT IGNORE INTO track_in_playlist (PLAYLIST_ID, TRACK_ID,OFFLINE_AVAILABLE) VALUES (?,?,?)")
         ) {
             preparedStatement.setInt(1, playlistID);
             preparedStatement.setInt(2, playlistEntry.getTrack().getTrackId());
@@ -46,7 +46,7 @@ public class TrackInPlaylistDAOMySQL implements ITrackInPlaylistDAO {
     public void deleteByPlaylist(int playlistID) {
         try (
                 Connection con = connection.getConnection();
-                PreparedStatement preparedStatement = con.prepareStatement("DELETE FROM track_in_playlist WHERE PLAYLIST_ID = ? ");
+                PreparedStatement preparedStatement = con.prepareStatement("DELETE FROM track_in_playlist WHERE PLAYLIST_ID = ? ")
         ) {
             preparedStatement.setInt(1, playlistID);
             preparedStatement.execute();
@@ -61,7 +61,7 @@ public class TrackInPlaylistDAOMySQL implements ITrackInPlaylistDAO {
         try (
                 Connection con = connection.getConnection();
                 PreparedStatement preparedStatement = con.prepareStatement("SELECT *FROM track_in_playlist");
-                ResultSet resultSet = preparedStatement.executeQuery();
+                ResultSet resultSet = preparedStatement.executeQuery()
         ) {
             while (resultSet.next())
                 resultList.add(getPlaylistEntryByResultSet(resultSet));
@@ -76,7 +76,7 @@ public class TrackInPlaylistDAOMySQL implements ITrackInPlaylistDAO {
         List<PlaylistEntry> resultList = new ArrayList<>();
         try (
                 Connection con = connection.getConnection();
-                PreparedStatement preparedStatement = con.prepareStatement("SELECT *FROM track_in_playlist WHERE PLAYLIST_ID = ?");
+                PreparedStatement preparedStatement = con.prepareStatement("SELECT *FROM track_in_playlist WHERE PLAYLIST_ID = ?")
         ) {
             preparedStatement.setInt(1, playlistID);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -86,6 +86,20 @@ public class TrackInPlaylistDAOMySQL implements ITrackInPlaylistDAO {
             e.printStackTrace();
         }
         return resultList;
+    }
+
+    @Override
+    public void deleteTrack(PlaylistEntry playlistEntry, int playlistID) {
+        try (
+                Connection con = connection.getConnection();
+                PreparedStatement preparedStatement = con.prepareStatement("DELETE FROM track_in_playlist WHERE TRACK_ID = ? AND PLAYLIST_ID = ?")
+        ) {
+            preparedStatement.setInt(1,  playlistEntry.getTrack().getTrackId());
+            preparedStatement.setInt(2, playlistID);
+            preparedStatement.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     private PlaylistEntry getPlaylistEntryByResultSet(ResultSet resultSet) throws SQLException {

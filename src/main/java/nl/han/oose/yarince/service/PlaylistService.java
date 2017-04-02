@@ -43,18 +43,11 @@ public class PlaylistService {
     }
 
     @POST
-    @Path("/track")
-    @Consumes("application/json")
-    @Produces("application/json")
-    public String addTrack(Playlist playlist) {
-        playlistDAO.addTrack(playlist);
-        return "Track added!";
-    }
-
-    @POST
     @Path("/delete")
     @Consumes("application/json")
-    public void delete(Playlist playlist) {
+    @Produces("text/html")
+    public String delete(Playlist playlist) {
         playlistDAO.delete(playlist.getPlaylistId());
+        return "Playlist " + playlist.getPlaylistId() +" deleted ";
     }
 }

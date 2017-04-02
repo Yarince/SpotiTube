@@ -37,13 +37,13 @@ public class LoginViewPageController extends HttpServlet {
             Client client = Client.create();
             WebResource webResource = client.resource("http://localhost:8080/login");
             ObjectMapper mapper = new ObjectMapper();
-            
+
             String input = "{\"username\":\"" + username + "\",\"password\":\"" + password + "\"}"; //this will be the input from the user
 
             ClientResponse response = webResource.type("application/json").post(ClientResponse.class, input);
 
             //check if response is successful
-            if (response.getStatus() < 200 && response.getStatus() > 300)
+            if ((response.getStatus() < 200 && response.getStatus() >= 300))
                 throw new RuntimeException("Failed: HTTP error code:" + response.getStatus());
 
             //Response
@@ -52,13 +52,14 @@ public class LoginViewPageController extends HttpServlet {
             //JSON from string to Object
             user = mapper.readValue(userString, User.class);
 
+            if (user != null && response.getStatus() != 204) {
+                session.setAttribute("USER", user);
+                resp.sendRedirect("/home");
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        if (user != null) {
-            session.setAttribute("USER", user);
-            resp.sendRedirect("/home");
-        }
+
     }
 }

@@ -1,3 +1,4 @@
+<%@ page import="nl.han.oose.yarince.domain.Song" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -19,17 +20,18 @@
             <div class="container" id="page_container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h3> Playlist name: <c:out value="${PLAYLIST.name}"/></h3>
+                        <h3> Playlist: <c:out value="${PLAYLIST.name}"/></h3>
                         <br>
                         Owner: <c:out value="${PLAYLIST.owner}"/>
                     </div>
                 </div>
-                <form method="post" action="<%=request.getContextPath()%>/playlist/details/addTrack"> TrackName
+                <form method="post" action="<%=request.getContextPath()%>/playlist/details/addTrack">
                     <button type="submit" name="playlistId"
                             value="<c:out value="${PLAYLIST.playlistId}"/>"
-                            class="btn btn-success btm-sm">Add tracks
+                            class="btn btn-info btm-sm">Add tracks
                     </button>
                 </form>
+                <br>
                 <div class="row">
                     <div class="panel panel-default">
                         <div class="panel-body">
@@ -38,31 +40,54 @@
                                 <c:when test="${not empty PLAYLIST}">
                                     <table class="table table-striped table-hover">
                                             <%--@elvariable id="TRACKS" type="java.util.List"--%>
-                                            <%--@elvariable id="track" type="nl.han.oose.yarince.domain.Track"--%>
-                                        <c:forEach items="${TRACKS}" var="track">
+                                            <%--@elvariable id="playlistEntry" type="nl.han.oose.yarince.domain.PlaylistEntry"--%>
+                                        <c:forEach items="${TRACKS}" var="playlistEntry">
                                             <tr>
                                                 <td>
-                                                    Title: <c:out value="${track.title}"/> <br>
+                                                    Title: <c:out value="${playlistEntry.track.title}"/> <br>
+                                                    Performer: <c:out value="${playlistEntry.track.performer}"/> <br>
                                                 </td>
                                                 <td>
-                                                    Performer: <c:out value="${track.performer}"/> <br>
+                                                    Offline available: <c:out
+                                                        value="${playlistEntry.offlineAvailable}"/>
                                                 </td>
-                                                <%--<c:choose>--%>
-                                                    <%--<c:when test="${track.trackType.toString() == 'Song'}">--%>
-                                                        <%--<td><%//todo check if song then print info %>--%>
-                                                            <%--tracktype: <c:out value="${track.trackType.toString()}"/>--%>
-                                                                <%--&lt;%&ndash;<c:out value="${track.}"/>&ndash;%&gt;--%>
-                                                            <%--song info--%>
-                                                        <%--</td>--%>
-                                                    <%--</c:when>--%>
-                                                    <%--<c:otherwise>--%>
-                                                        <%--<td>--%>
-                                                            <%--tracktype: <c:out value="${track.trackType.toString()}"/>--%>
-                                                                <%--&lt;%&ndash;<c:out value="${track.}"&ndash;%&gt;--%>
-                                                            <%--video info--%>
-                                                        <%--</td>--%>
-                                                    <%--</c:otherwise>--%>
-                                                <%--</c:choose>--%>
+                                                <c:choose>
+                                                    <c:when test="${playlistEntry.track.trackType.toString() == 'Song'}">
+                                                        <c:catch var="e">
+                                                            <td>
+                                                                <%//todo check if song then print info %>
+                                                                Track type: <c:out
+                                                                    value="${playlistEntry.track.trackType.toString()}"/>
+                                                                <br>
+                                                                Album: <c:out value="${playlistEntry.track.album}"/>
+                                                            </td>
+                                                        </c:catch>
+                                                    </c:when>
+                                                    <c:otherwise>
+                                                        <c:catch var="e">
+                                                            <td>
+                                                                Track type: <c:out
+                                                                    value="${playlistEntry.track.trackType.toString()}"/>
+                                                                <br>
+                                                                Publication date: <c:out
+                                                                    value="${playlistEntry.track.publicationDate}"/>
+                                                                <br>
+                                                                Play Count: <c:out
+                                                                    value="${playlistEntry.track.playCount}"/>
+                                                            </td>
+                                                        </c:catch>
+                                                    </c:otherwise>
+                                                </c:choose>
+                                                <td>
+                                                    <form method="post">
+                                                        <input type="hidden" name="playlistId"
+                                                               value="<c:out value="${PLAYLIST.playlistId}"/>">
+                                                        <button type="submit" name="deleteTrackId"
+                                                                value="<c:out value="${playlistEntry.track.trackId}"/>"
+                                                                class="btn btn-success btm-sm">Delete track
+                                                        </button>
+                                                    </form>
+                                                </td>
                                             </tr>
                                         </c:forEach>
                                     </table>

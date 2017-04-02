@@ -17,12 +17,12 @@
                         <h3>Welcome <c:out value="${sessionScope.USER.username}"/></h3>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row productbox">
                     <form action="" name="newPlaylist" method="post"
                           onsubmit="setTimeout(function () { window.location.reload(); }, 10)">
                         New playlist
                         <label>
-                            Playlist Name: <input type="text" name="playlistName">
+                            Playlist Name: <input type="text" name="playlistName" required="">
                         </label>
                         <input type="submit" value="Save" name="newPlaylist" href="/home">
                     </form>

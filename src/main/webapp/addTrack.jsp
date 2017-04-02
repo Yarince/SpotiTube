@@ -28,36 +28,34 @@
                             <%--@elvariable id="TRACKS" type="java.util.List"--%>
                             <%--@elvariable id="track" type="nl.han.oose.yarince.domain.Track"--%>
                         <c:forEach items="${TRACKS}" var="track">
+                            <% //TODO check if song or video %>
                             <tr> <%--class="thumbnail playlistId"--%>
                                 <td>
                                     Title: <c:out value="${track.title}"/> <br>
                                     Performer: <c:out value="${track.performer}"/> <br>
                                     Duration: <c:out value="${track.duration}"/>
                                 </td>
-                                    <%--<c:choose>--%>
+                                <%--<c:choose>--%>
                                     <%--<c:when test="${track.trackType.toString() == 'Song'}">--%>
-                                    <%--&lt;%&ndash;@elvariable id="track" type="nl.han.oose.yarince.domain.Song"&ndash;%&gt;--%>
-                                    <%--<td>--%>
-                                    <%--Track type:<c:out value="${track.trackType.toString()}"/> <br>--%>
-                                    <%--Album: <c:out value="${track.album}"/>--%>
-                                    <%--</td>--%>
+                                        <%--<td>--%>
+                                            <%--Track type:<c:out value="${track.trackType.toString()}"/> <br>--%>
+                                            <%--Album: <c:out value="${track.album}"/>--%>
+                                        <%--</td>--%>
                                     <%--</c:when>--%>
                                     <%--<c:otherwise>--%>
-                                    <%--&lt;%&ndash;@elvariable id="track" type="nl.han.oose.yarince.domain.Video"&ndash;%&gt;--%>
-                                    <%--<td>--%>
-                                    <%--whoops--%>
-                                    <%--&lt;%&ndash;Track type:<c:out value="${track.trackType.toString()}"/> <br>&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;Duration: <c:out value="${track.duration}"/><br>&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;Playcount: <c:out value="${track.playCount}"/><br>&ndash;%&gt;--%>
-                                    <%--&lt;%&ndash;Publication date: <c:out value="${track.publicationDate}"/><br>&ndash;%&gt;--%>
-                                    <%--</td>--%>
+                                        <%--<td>--%>
+                                            <%--Track type:<c:out value="${track.trackType.toString()}"/> <br>--%>
+                                            <%--Duration: <%=2%>--%>
+                                            <%--Duration: <c:out value="${track.duration}"/><br>--%>
+                                            <%--Play count: <c:out value="${track.playCount}"/><br>--%>
+                                            <%--Publication date: <c:out value="${track.publicationDate}"/><br>--%>
+                                        <%--</td>--%>
                                     <%--</c:otherwise>--%>
-                                    <%--</c:choose>--%>
+                                <%--</c:choose>--%>
                                 <td>
-                                    <%--TODO maak deze pagina--%>
-                                    <form method="post" action="<%=request.getContextPath()%>/trackDetails">
-                                        <input type="hidden" name="playlistId"
-                                               value="<c:out value="${PLAYLIST.playlistId}"/>">
+                                        <%--TODO maak deze pagina--%>
+                                    <form method="post"
+                                          action="<%=request.getContextPath()%>/trackDetails?id=<c:out value="${track.trackId}"/>">
                                         <button type="submit" name="trackId"
                                                 value="<c:out value="${track.trackId}"/>"
                                                 class="btn btn-success btm-sm">Details
@@ -68,15 +66,16 @@
                                     <form method="post">
                                         <input type="hidden" name="playlistId"
                                                value="<c:out value="${PLAYLIST.playlistId}"/>">
-                                        <label>Offline Available:
-                                            <input type="checkbox" name="offlineAvailable${track.trackId}" value="true">
-                                        </label>
-                                        <button type="submit" name="trackId"
+                                        <button type="submit" name="addTrackId"
                                                 value="<c:out value="${track.trackId}"/>"
                                                 class="btn btn-success btm-sm">Add track
                                         </button>
+                                        <label>Offline Available:
+                                            <input type="checkbox" name="offlineAvailable${track.trackId}" value="true">
+                                        </label>
                                     </form>
                                 </td>
+
                             </tr>
                         </c:forEach>
                     </table>

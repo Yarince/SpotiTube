@@ -1,5 +1,6 @@
 package nl.han.oose.yarince.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Playlist {
@@ -36,6 +37,7 @@ public class Playlist {
 
     //TODO toevoegen HIER MEE ID TOEVOEGEN IN DB
     public void addTrack(Track track, boolean offlineAvailable) {
+        playlistEntries = new ArrayList<>();
         playlistEntries.add(new PlaylistEntry(track, offlineAvailable));
     }
 

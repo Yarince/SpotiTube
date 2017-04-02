@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Project name: SpotiTube.
  * Created by Yarince on 20/03/2017.
  */
 @Default
@@ -59,7 +60,7 @@ public class PlaylistDAOMySQL implements IPlaylistDAO {
         List<Playlist> resultList = new ArrayList<>();
         try (
                 Connection con = connection.getConnection();
-                PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM PLAYLIST WHERE OWNER LIKE  ?");
+                PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM PLAYLIST WHERE OWNER LIKE  ?")
         ) {
             preparedStatement.setString(1, '%' + owner + '%');
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -81,7 +82,7 @@ public class PlaylistDAOMySQL implements IPlaylistDAO {
         Playlist result = null;
         try (
                 Connection con = connection.getConnection();
-                PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM PLAYLIST WHERE PLAYLIST_ID LIKE  ?");
+                PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM PLAYLIST WHERE PLAYLIST_ID LIKE  ?")
         ) {
             preparedStatement.setInt(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -100,7 +101,7 @@ public class PlaylistDAOMySQL implements IPlaylistDAO {
     public void save(Playlist playlist) {
         try (
                 Connection con = connection.getConnection();
-                PreparedStatement preparedStatement = con.prepareStatement("UPDATE playlist SET NAME = ? WHERE PLAYLIST_ID = ?");
+                PreparedStatement preparedStatement = con.prepareStatement("UPDATE playlist SET NAME = ? WHERE PLAYLIST_ID = ?")
         ) {
             preparedStatement.setString(1, playlist.getName());
             preparedStatement.setInt(2, playlist.getPlaylistId());
@@ -120,7 +121,7 @@ public class PlaylistDAOMySQL implements IPlaylistDAO {
     public void delete(int playlistId) {
         try (
                 Connection con = connection.getConnection();
-                PreparedStatement preparedStatement = con.prepareStatement("DELETE FROM PLAYLIST WHERE PLAYLIST_ID = ?");
+                PreparedStatement preparedStatement = con.prepareStatement("DELETE FROM PLAYLIST WHERE PLAYLIST_ID = ?")
         ) {
             preparedStatement.setInt(1, playlistId);
             trackInPlaylistDAO.deleteByPlaylist(playlistId);
@@ -144,18 +145,6 @@ public class PlaylistDAOMySQL implements IPlaylistDAO {
             preparedStatement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
-        }
-    }
-
-    @Override
-    public void addTrack(PlaylistEntry playlistEntry, int playlistId) {
-        trackInPlaylistDAO.add(playlistEntry, playlistId);
-    }
-
-    @Override
-    public void addTrack(Playlist playlist) {
-        for (PlaylistEntry playlistEntry : playlist.getPlaylistEntries()) {
-            trackInPlaylistDAO.add(playlistEntry, playlist.getPlaylistId());
         }
     }
 

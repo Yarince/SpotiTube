@@ -1,7 +1,10 @@
 package nl.han.oose.yarince.presentation.controller;
 
+import com.mysql.cj.core.util.StringUtils;
+import com.sun.jersey.api.client.Client;
+import com.sun.jersey.api.client.ClientResponse;
+import com.sun.jersey.api.client.WebResource;
 import nl.han.oose.yarince.domain.Playlist;
-import nl.han.oose.yarince.domain.Track;
 import org.apache.cxf.jaxrs.client.WebClient;
 
 import javax.servlet.ServletException;
@@ -30,13 +33,31 @@ public class PlaylistViewPageController extends HttpServlet {
 
         String playlistId = req.getParameter("playlistId");
 
-        if (playlistId != null) {
+        if (StringUtils.isEmptyOrWhitespaceOnly(playlistId)) {
             WebClient webClient = WebClient.create("http://localhost:8080/").path("/playlists/id/" + playlistId).accept("application/json");
-            req.setAttribute("PLAYLIST", webClient.get(Playlist.class));
+            Playlist playlist = webClient.get(Playlist.class);
+            req.setAttribute("PLAYLIST", playlist);
 
-            WebClient webClient2 = WebClient.create("http://localhost:8080/").path("/tracks/playlist/" + playlistId).accept("application/json");
-            req.setAttribute("TRACKS", webClient2.getCollection(Track.class));
+            req.setAttribute("TRACKS", playlist.getPlaylistEntries());
+
+            String deleteTrackId = req.getParameter("deleteTrackId");
+
+            if (StringUtils.isEmptyOrWhitespaceOnly(deleteTrackId)) {
+                Client client = Client.create();
+                WebResource webResource = client.resource("http://localhost:8080/playlistEntry/delete");
+
+                String input = "{\"playlistId\":" + playlistId + ",\"playlistEntries\":[{\"track\":{\"trackId\":" + deleteTrackId + "}}]}";
+
+                ClientResponse response = webResource.type("application/json").post(ClientResponse.class, input);
+
+                //check if response is successful
+                if (response.getStatus() < 200 && response.getStatus() >= 300)
+                    throw new RuntimeException("Failed: HTTP error code:" + response.getStatus());
+                System.out.println(input + "\n" + "Message recieved");
+            }
         }
+
+
         req.getRequestDispatcher("../playlist.jsp").forward(req, resp);
     }
 }
