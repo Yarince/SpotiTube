@@ -22,11 +22,10 @@
                     </div>
                 </div>
                 <div class="row productbox">
-                    <form action="" name="newPlaylist" method="post"
-                          onsubmit="setTimeout(function () { window.location.reload(); }, 10)">
+                    <form action="" name="newPlaylist" method="post">
                         New playlist
                         <label>
-                            Playlist Name: <input type="text" name="playlistName" required="">
+                            Playlist Name: <input type="text" name="newPlaylistName" required="">
                         </label>
                         <input type="submit" value="Save" name="newPlaylist" href="/home">
                     </form>
@@ -61,7 +60,7 @@
                                                         class="btn btn-success btm-sm">Edit playlist
                                                 </button>
                                             </form>
-                                            <form action="" onclick="window.location.reload()" method="post">
+                                            <form action="" method="post">
                                                 <button type="submit" name="deletePlaylist"
                                                         value="<c:out value="${PLAYLIST.playlistId}"/>"
                                                         class="btn btn-success btm-sm">Delete playlist

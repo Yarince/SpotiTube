@@ -32,12 +32,14 @@ public class LoginViewPageController extends HttpServlet {
         String password = req.getParameter("Password");
         HttpSession session = req.getSession();
         User user = null;
+
         try {
             Client client = Client.create();
             WebResource webResource = client.resource("http://localhost:8080/loginService");
             ObjectMapper mapper = new ObjectMapper();
 
-            String input = "{\"username\":\"" + username + "\",\"password\":\"" + password + "\"}"; //this will be the input from the user
+            //this will be the input from the user
+            String input = "{\"username\":\"" + username + "\",\"password\":\"" + password + "\"}";
 
             ClientResponse response = webResource.type("application/json").post(ClientResponse.class, input);
 
@@ -48,6 +50,7 @@ public class LoginViewPageController extends HttpServlet {
             //Response
             String userString = response.getEntity(String.class);
 
+            //If response has a return
             //JSON from string to Object
             if (response.getStatus() != 204)
                 user = mapper.readValue(userString, User.class);
