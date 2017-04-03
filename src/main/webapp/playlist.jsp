@@ -25,12 +25,21 @@
                         Owner: <c:out value="${PLAYLIST.owner}"/>
                     </div>
                 </div>
-                <form method="post" action="<%=request.getContextPath()%>/playlist/details/addTrack">
-                    <button type="submit" name="playlistId"
-                            value="<c:out value="${PLAYLIST.playlistId}"/>"
-                            class="btn btn-info btm-sm">Add tracks
-                    </button>
-                </form>
+                <div class="row">
+                    <form action="" name="newPlaylist" method="post"
+                          onsubmit="setTimeout(function () { window.location.reload(); }, 10)">
+                        <label>
+                            New Playlist Name: <input type="text" name="newPlaylistName" required="">
+                        </label>
+                        <input type="submit" value="Save" name="newPlaylist" href="/home">
+                    </form>
+                    <form method="post" action="<%=request.getContextPath()%>/playlist/details/addTrack">
+                        <button type="submit" name="playlistId"
+                                value="<c:out value="${PLAYLIST.playlistId}"/>"
+                                class="btn btn-info btm-sm">Add tracks
+                        </button>
+                    </form>
+                </div>
                 <br>
                 <div class="row">
                     <div class="panel panel-default">
@@ -106,7 +115,7 @@
         </div>
     </c:when>
     <c:otherwise>
-        <meta http-equiv="refresh" content="0; url='<%=request.getContextPath()%>/index.html'"/>
+        <meta http-equiv="refresh" content="0; url='<%=request.getContextPath()%>/index.html'" property=""/>
         <div class="alert alert-warning text-center">
             <p><a href="<%=request.getContextPath()%>/index.html">Please login!</a></p>
         </div>

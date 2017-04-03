@@ -33,7 +33,9 @@ public class PlaylistViewPageController extends HttpServlet {
 
         String playlistId = req.getParameter("playlistId");
 
-        if (StringUtils.isEmptyOrWhitespaceOnly(playlistId)) {
+
+        if (!StringUtils.isEmptyOrWhitespaceOnly(playlistId)) {
+            System.out.println("playlistId = " + playlistId);
             WebClient webClient = WebClient.create("http://localhost:8080/").path("/playlists/id/" + playlistId).accept("application/json");
             Playlist playlist = webClient.get(Playlist.class);
             req.setAttribute("PLAYLIST", playlist);
@@ -42,7 +44,7 @@ public class PlaylistViewPageController extends HttpServlet {
 
             String deleteTrackId = req.getParameter("deleteTrackId");
 
-            if (StringUtils.isEmptyOrWhitespaceOnly(deleteTrackId)) {
+            if (!StringUtils.isEmptyOrWhitespaceOnly(deleteTrackId)) {
                 Client client = Client.create();
                 WebResource webResource = client.resource("http://localhost:8080/playlistEntry/delete");
 
@@ -56,8 +58,6 @@ public class PlaylistViewPageController extends HttpServlet {
                 System.out.println(input + "\n" + "Message recieved");
             }
         }
-
-
         req.getRequestDispatcher("../playlist.jsp").forward(req, resp);
     }
 }

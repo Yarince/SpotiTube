@@ -35,13 +35,13 @@ public class AddTrackPageController extends HttpServlet {
 
     private void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String playlistId = req.getParameter("playlistId");
-        if (StringUtils.isEmptyOrWhitespaceOnly(playlistId)) {
+        if (!StringUtils.isEmptyOrWhitespaceOnly(playlistId)) {
             WebClient webClient1 = WebClient.create("http://localhost:8080/").path("/playlists/id/" + playlistId).accept("application/json");
             req.setAttribute("PLAYLIST", webClient1.get(Playlist.class));
 
             WebClient webClient2 = WebClient.create("http://localhost:8080/").path("/tracks/notInPlaylist/" + playlistId).accept("application/json");
             Collection<? extends Track> tracksUnassigned = webClient2.getCollection(Track.class);
-            
+
 //            Collection<Track> tracks = new ArrayList<>();
 //
 //            for (Track track : tracksUnassigned) {
@@ -61,19 +61,22 @@ public class AddTrackPageController extends HttpServlet {
             String trackId = req.getParameter("addTrackId");
             String offlineAvailable = req.getParameter("offlineAvailable" + trackId);
 
-            if (StringUtils.isEmptyOrWhitespaceOnly(trackId)) {
+            if (!StringUtils.isEmptyOrWhitespaceOnly(trackId)) {
+                try {
+                    Client client = Client.create();
+                    WebResource webResource = client.resource("http://localhost:8080/playlistEntry/add");
 
-                Client client = Client.create();
-                WebResource webResource = client.resource("http://localhost:8080/playlistEntry/add");
+                    String input = "{\"playlistId\":" + playlistId + ",\"playlistEntries\":[{\"track\":{\"trackId\":" + trackId + "},\"offlineAvailable\":" + Boolean.parseBoolean(offlineAvailable) + "}]}";
+                    ClientResponse response = webResource.type("application/json").post(ClientResponse.class, input);
 
-                String input = "{\"playlistId\":" + playlistId + ",\"playlistEntries\":[{\"track\":{\"trackId\":" + trackId + "},\"offlineAvailable\":" + Boolean.parseBoolean(offlineAvailable) + "}]}";
-                ClientResponse response = webResource.type("application/json").post(ClientResponse.class, input);
+                    System.out.println(trackId + " - Track added!");
 
-                System.out.println(trackId + " - Track added!");
-
-                //check if response is successful
-                if (response.getStatus() < 200 && response.getStatus() >= 300)
-                    throw new RuntimeException("Failed: HTTP error code:" + response.getStatus());
+                    //check if response is successful
+                    if (response.getStatus() < 200 && response.getStatus() >= 300)
+                        throw new RuntimeException("Failed: HTTP error code:" + response.getStatus());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
             req.getRequestDispatcher("../../addTrack.jsp").forward(req, resp);
         }

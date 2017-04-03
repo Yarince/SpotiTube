@@ -19,6 +19,14 @@ public class PlaylistService {
         return playlistDAO.getAllPlaylists();
     }
 
+    @POST
+    @Produces("application/json")
+    @Consumes("application/json")
+    public String add(Playlist playlist) {
+        playlistDAO.add(playlist);
+        return "Name: " + playlist.getName() + " owner: " + playlist.getOwner();
+    }
+
     @GET
     @Path("/owner/{owner}")
     @Produces("application/json")
@@ -35,19 +43,20 @@ public class PlaylistService {
     }
 
     @POST
-    @Produces("application/json")
-    @Consumes("application/json")
-    public String add(Playlist playlist) {
-        playlistDAO.add(playlist);
-        return "Name: " + playlist.getName() + " owner: " + playlist.getOwner();
-    }
-
-    @POST
     @Path("/delete")
     @Consumes("application/json")
     @Produces("text/html")
     public String delete(Playlist playlist) {
         playlistDAO.delete(playlist.getPlaylistId());
-        return "Playlist " + playlist.getPlaylistId() +" deleted ";
+        return "Playlist " + playlist.getPlaylistId() + " deleted ";
+    }
+
+    @POST
+    @Path("/save")
+    @Produces("application/json")
+    @Consumes("application/json")
+    public String save(Playlist playlist) {
+        playlistDAO.save(playlist);
+        return "Plalist " + playlist.getPlaylistId() + " Name changed to: " + playlist.getName();
     }
 }

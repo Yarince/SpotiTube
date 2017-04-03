@@ -94,7 +94,7 @@ public class TrackInPlaylistDAOMySQL implements ITrackInPlaylistDAO {
                 Connection con = connection.getConnection();
                 PreparedStatement preparedStatement = con.prepareStatement("DELETE FROM track_in_playlist WHERE TRACK_ID = ? AND PLAYLIST_ID = ?")
         ) {
-            preparedStatement.setInt(1,  playlistEntry.getTrack().getTrackId());
+            preparedStatement.setInt(1, playlistEntry.getTrack().getTrackId());
             preparedStatement.setInt(2, playlistID);
             preparedStatement.execute();
         } catch (SQLException e) {

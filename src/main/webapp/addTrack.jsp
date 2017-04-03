@@ -75,7 +75,6 @@
                                         </label>
                                     </form>
                                 </td>
-
                             </tr>
                         </c:forEach>
                     </table>
@@ -84,7 +83,7 @@
         </div>
     </c:when>
     <c:otherwise>
-        <meta http-equiv="refresh" content="0; url='<%=request.getContextPath()%>/index.html'"/>
+        <meta http-equiv="refresh" content="0; url='<%=request.getContextPath()%>/index.html'" property=""/>
         <div class="alert alert-warning text-center">
             <p><a href="index.html">Please login!</a></p>
         </div>

@@ -38,43 +38,52 @@ public class HomeViewPageController extends HttpServlet {
         User user = (User) req.getSession().getAttribute("USER");
 
         if (user != null) {
-            webClient = WebClient.create("http://localhost:8080/").path("/playlists/owner/" + user.getUsername()).accept("application/json");
-            req.setAttribute("PLAYLIST_BY_OWNER", webClient.getCollection(Playlist.class));
-
             String playlistName = req.getParameter("playlistName");
-
             if (!StringUtils.isEmptyOrWhitespaceOnly(playlistName)) {
-                Client client = Client.create();
-                WebResource webResource = client.resource("http://localhost:8080/playlists");
+                try {
+                    Client client = Client.create();
+                    WebResource webResource = client.resource("http://localhost:8080/playlists");
 
-                String input = "{\"owner\":\"" + user.getUsername() + "\",\"name\":\"" + playlistName + "\"}"; //this will be the input from the user
+                    String input = "{\"owner\":\"" + user.getUsername() + "\",\"name\":\"" + playlistName + "\"}"; //this will be the input from the user
 
-                ClientResponse response = webResource.type("application/json").post(ClientResponse.class, input);
+                    ClientResponse response = webResource.type("application/json").post(ClientResponse.class, input);
 
-                //check if response is successful
-                if (response.getStatus() > 200 && response.getStatus() < 300)
-                    throw new RuntimeException("Failed: HTTP error code:" + response.getStatus());
+                    //check if response is successful
+                    if (response.getStatus() > 200 && response.getStatus() < 300)
+                        throw new RuntimeException("Failed: HTTP error code:" + response.getStatus());
 
-                System.out.println(input + "\n" + "Message recieved");
+                    System.out.println(input + "\n" + "Message recieved");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
+
+            webClient = WebClient.create("http://localhost:8080/").path("/playlists/owner/" + user.getUsername()).accept("application/json");
+
+            req.setAttribute("PLAYLIST_BY_OWNER", webClient.getCollection(Playlist.class));
 
             String deletePlaylistId = req.getParameter("deletePlaylist");
 
             if (!StringUtils.isEmptyOrWhitespaceOnly(deletePlaylistId)) {
+                try {
 
-                Client client = Client.create();
-                WebResource webResource = client.resource("http://localhost:8080/playlists/delete");
+                    Client client = Client.create();
+                    WebResource webResource = client.resource("http://localhost:8080/playlists/delete");
 
-                String input = "{\"playlistId\":" + deletePlaylistId + "}";
+                    String input = "{\"playlistId\":" + deletePlaylistId + "}";
 
-                ClientResponse response = webResource.type("application/json").post(ClientResponse.class, input);
+                    ClientResponse response = webResource.type("application/json").post(ClientResponse.class, input);
 
-                //check if response is successful
-                if (response.getStatus() < 200 && response.getStatus() >= 300)
-                    throw new RuntimeException("Failed: HTTP error code:" + response.getStatus());
-                System.out.println(input + "\n" + "Message recieved");
+                    //check if response is successful
+                    if (response.getStatus() < 200 && response.getStatus() >= 300)
+                        throw new RuntimeException("Failed: HTTP error code:" + response.getStatus());
+                    System.out.println(input + "\n" + "Message recieved");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         }
+
         req.getRequestDispatcher("home.jsp").forward(req, resp);
     }
 }
