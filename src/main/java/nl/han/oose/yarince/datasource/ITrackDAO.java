@@ -10,6 +10,8 @@ public interface ITrackDAO {
 
     List<Track> getUnusedTracks(int playlistId);
 
+    List<Track> findUnusedTracks(int playlistId, String title);
+
     List<Track> findByTitle(String title);
 
     Track findById(int id);

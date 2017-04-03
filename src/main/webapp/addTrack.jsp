@@ -23,6 +23,16 @@
                     </div>
                 </div>
                 <div class="row">
+                    <form action="" name="searchTrack" method="post">
+                        <input type="hidden" value="${PLAYLIST.playlistId}" name="playlistId">
+                        Search tracks
+                        <label>
+                            Track Name: <input type="text" name="title" required="">
+                        </label>
+                        <input type="submit">
+                    </form>
+                </div>
+                <div class="row">
                     <table class="table table-striped table-hover">
                             <%--@elvariable id="TRACKS" type="java.util.List"--%>
                             <%--@elvariable id="track" type="nl.han.oose.yarince.domain.Track"--%>

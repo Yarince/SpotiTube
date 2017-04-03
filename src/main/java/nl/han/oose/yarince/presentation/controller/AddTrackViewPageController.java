@@ -21,7 +21,7 @@ import java.util.Collection;
  * Created by Yarince on 30/03/2017.
  */
 @WebServlet("/playlist/details/addTrack")
-public class AddTrackPageController extends HttpServlet {
+public class AddTrackViewPageController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -42,7 +42,6 @@ public class AddTrackPageController extends HttpServlet {
             WebClient webClient2 = WebClient.create("http://localhost:8080/").path("/tracks/notInPlaylist/" + playlistId).accept("application/json");
             Collection<? extends Track> tracksUnassigned = webClient2.getCollection(Track.class);
 
-            req.setAttribute("TRACKS", tracksUnassigned);
             String trackId = req.getParameter("addTrackId");
             String offlineAvailable = req.getParameter("offlineAvailable" + trackId);
 
@@ -63,6 +62,16 @@ public class AddTrackPageController extends HttpServlet {
                     e.printStackTrace();
                 }
             }
+
+            String searchTrack = req.getParameter("title");
+
+            if (!StringUtils.isEmptyOrWhitespaceOnly(searchTrack)) {
+                WebClient webClient3 = WebClient.create("http://localhost:8080/").path("/tracks/notInPlaylist/search?title=" + searchTrack + "&id=" + playlistId).accept("application/json");
+                tracksUnassigned = webClient3.getCollection(Track.class);
+            }
+            req.setAttribute("TRACKS", tracksUnassigned);
+
+
             req.getRequestDispatcher("../../addTrack.jsp").forward(req, resp);
         }
     }

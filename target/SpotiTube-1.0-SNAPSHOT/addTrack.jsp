@@ -23,6 +23,16 @@
                     </div>
                 </div>
                 <div class="row">
+                    <form action="" name="searchTrack" method="post">
+                        <input type="hidden" value="${PLAYLIST.playlistId}" name="playlistId">
+                        Search tracks
+                        <label>
+                            Track Name: <input type="text" name="title" required="">
+                        </label>
+                        <input type="submit">
+                    </form>
+                </div>
+                <div class="row">
                     <table class="table table-striped table-hover">
                             <%--@elvariable id="TRACKS" type="java.util.List"--%>
                             <%--@elvariable id="track" type="nl.han.oose.yarince.domain.Track"--%>
@@ -33,17 +43,13 @@
                                     Performer: <c:out value="${track.performer}"/> <br>
                                     Duration: <c:out value="${track.duration}"/>
                                 </td>
-                                    <td>
-                                    Track type:<c:out value="${track.trackType}"/> <br>
-                                    </td>
                                 <td>
-                                    <form method="post"
-                                          action="<%=request.getContextPath()%>/trackDetails?id=<c:out value="${track.trackId}"/>">
-                                        <button type="submit" name="trackId"
-                                                value="<c:out value="${track.trackId}"/>"
-                                                class="btn btn-success btm-sm">Details
-                                        </button>
-                                    </form>
+                                    Track type:<c:out value="${track.trackType}"/> <br>
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btm-sm"
+                                       href="<%=request.getContextPath()%>/trackDetails?id=<c:out value="${track.trackId}"/>">
+                                        Details</a>
                                 </td>
                                 <td>
                                     <form method="post">

@@ -24,15 +24,15 @@ public class HomeViewPageController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        doExecution(req, resp);
+        execute(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        doExecution(req, resp);
+        execute(req, resp);
     }
 
-    private void doExecution(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    private void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         WebClient webClient;
 
         User user = (User) req.getSession().getAttribute("USER");
