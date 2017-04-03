@@ -47,6 +47,5 @@ public class TrackDetailsViewPageController extends HttpServlet {
                 req.setAttribute("VIDEO", video);
                 break;
         }
-
-    }
+        }
 }

@@ -26,14 +26,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <form action="" name="newPlaylist" method="post"
-                          onsubmit="setTimeout(function () { window.location.reload(); }, 10)">
+                    <form action="" method="post">
+                        <input type="hidden" value="${PLAYLIST.playlistId}" name="playlistId">
                         <label>
                             New Playlist Name: <input type="text" name="newPlaylistName" required="">
                         </label>
                         <input type="submit" value="Save" name="newPlaylistNameSave">
                     </form>
-
                     <form method="post" action="<%=request.getContextPath()%>/playlist/details/addTrack">
                         <button type="submit" name="playlistId"
                                 value="<c:out value="${PLAYLIST.playlistId}"/>"
@@ -69,7 +68,7 @@
                                                     <a class="btn btn-success btm-sm"
                                                        href="<%=request.getContextPath()%>/trackDetails?id=<c:out value="${playlistEntry.track.trackId}"/>">
                                                         Details</a>
-                                                    <form method="post">
+                                                    <form method="post" action="">
                                                         <input type="hidden" name="playlistId"
                                                                value="<c:out value="${PLAYLIST.playlistId}"/>">
                                                         <button type="submit" name="deleteTrackId"

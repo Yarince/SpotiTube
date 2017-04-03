@@ -14,7 +14,7 @@ public interface IPlaylistDAO {
 
     void save(Playlist playlist);
 
-    void delete(int playlist);
+    void delete(int playlistId);
 
     void add(Playlist playlist);
 }

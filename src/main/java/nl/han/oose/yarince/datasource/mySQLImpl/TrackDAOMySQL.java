@@ -137,8 +137,7 @@ public class TrackDAOMySQL implements ITrackDAO {
                     resultSet.getInt("TRACK_ID"),
                     resultSet.getString("PERFORMER"),
                     resultSet.getString("TITLE"),
-                    resultSet.getLong("DURATION"),
-                    resultSet.getString("URL"),
+                    resultSet.getString("URL"), resultSet.getLong("DURATION"),
                     resultSet.getString("ALBUM")
             );
         } else {

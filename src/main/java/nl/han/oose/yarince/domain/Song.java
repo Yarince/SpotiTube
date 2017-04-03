@@ -3,7 +3,7 @@ package nl.han.oose.yarince.domain;
 public class Song extends Track {
     private String album;
 
-    public Song(int trackId, String performer, String title, long duration, String url, String album) {
+    public Song(int trackId, String performer, String title, String url, long duration, String album) {
         super(trackId, performer, title, url, duration, TrackType.Song);
         this.album = album;
     }

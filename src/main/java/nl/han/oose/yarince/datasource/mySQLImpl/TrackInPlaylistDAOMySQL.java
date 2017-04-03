@@ -26,12 +26,12 @@ public class TrackInPlaylistDAOMySQL implements ITrackInPlaylistDAO {
     private TrackDAOMySQL trackDAOMySQL;
 
     @Override
-    public void add(PlaylistEntry playlistEntry, int playlistID) {
+    public void add(PlaylistEntry playlistEntry, int playlistId) {
         try (
                 Connection con = connection.getConnection();
                 PreparedStatement preparedStatement = con.prepareStatement("INSERT IGNORE INTO track_in_playlist (PLAYLIST_ID, TRACK_ID,OFFLINE_AVAILABLE) VALUES (?,?,?)")
         ) {
-            preparedStatement.setInt(1, playlistID);
+            preparedStatement.setInt(1, playlistId);
             preparedStatement.setInt(2, playlistEntry.getTrack().getTrackId());
             preparedStatement.setBoolean(3, playlistEntry.isOfflineAvailable());
             preparedStatement.execute();

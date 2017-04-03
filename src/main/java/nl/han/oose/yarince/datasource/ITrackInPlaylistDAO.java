@@ -10,7 +10,7 @@ import java.util.List;
  */
 public interface ITrackInPlaylistDAO {
 
-    void add(PlaylistEntry playlistEntry, int playlistID);
+    void add(PlaylistEntry playlistEntry, int playlistId);
 
     void deleteByPlaylist(int playlistID);
 

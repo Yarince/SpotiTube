@@ -29,8 +29,13 @@
                         <label>
                             Track Name: <input type="text" name="title" required="">
                         </label>
-                        <input type="submit">
+                        <input type="submit" name="Search">
                     </form>
+                    <form method="post" action="">
+                        <input type="hidden" value="${PLAYLIST.playlistId}" name="playlistId">
+                        <input type="submit" name="Reset" value="reset">
+                    </form>
+
                 </div>
                 <div class="row">
                     <table class="table table-striped table-hover">
@@ -52,7 +57,7 @@
                                         Details</a>
                                 </td>
                                 <td>
-                                    <form method="post">
+                                    <form method="post" action="">
                                         <input type="hidden" name="playlistId"
                                                value="<c:out value="${PLAYLIST.playlistId}"/>">
                                         <button type="submit" name="addTrackId"
