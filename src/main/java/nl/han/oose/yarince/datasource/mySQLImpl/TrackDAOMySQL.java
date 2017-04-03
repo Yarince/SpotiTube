@@ -12,7 +12,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -124,8 +123,8 @@ public class TrackDAOMySQL implements ITrackDAO {
                     resultSet.getString("ALBUM")
             );
         } else {
-            Calendar calendar = Calendar.getInstance();
-            calendar.setTime(resultSet.getDate("PUBLICATIONDATE"));
+//            Calendar calendar = Calendar.getInstance();
+//            calendar.setTime(resultSet.getDate("PUBLICATIONDATE"));
             return new Video(
                     resultSet.getInt("TRACK_ID"),
                     resultSet.getString("PERFORMER"),
@@ -133,7 +132,7 @@ public class TrackDAOMySQL implements ITrackDAO {
                     resultSet.getString("URL"),
                     resultSet.getLong("DURATION"),
                     resultSet.getInt("PLAYCOUNT"),
-                    calendar,
+                    resultSet.getDate("PUBLICATIONDATE").toString(),
                     resultSet.getString("DESCRIPTION")
             );
         }

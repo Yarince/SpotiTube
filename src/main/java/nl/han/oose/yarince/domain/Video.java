@@ -1,14 +1,12 @@
 package nl.han.oose.yarince.domain;
 
-import java.util.Calendar;
-
 public class Video extends Track {
 
     private int playCount;
-    private Calendar publicationDate;
+    private String publicationDate;
     private String description;
 
-    public Video(int trackId, String performer, String title, String url, long duration, int playCount, Calendar publicationDate, String description) {
+    public Video(int trackId, String performer, String title, String url, long duration, int playCount, String publicationDate, String description) {
         super(trackId, performer, title, url, duration, TrackType.Video);
         this.playCount = playCount;
         this.publicationDate = publicationDate;
@@ -26,11 +24,11 @@ public class Video extends Track {
         this.playCount = playCount;
     }
 
-    public Calendar getPublicationDate() {
+    public String getPublicationDate() {
         return publicationDate;
     }
 
-    public void setPublicationDate(Calendar publicationDate) {
+    public void setPublicationDate(String publicationDate) {
         this.publicationDate = publicationDate;
     }
 

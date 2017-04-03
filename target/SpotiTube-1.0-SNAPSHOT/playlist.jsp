@@ -61,34 +61,18 @@
                                                     Offline available: <c:out
                                                         value="${playlistEntry.offlineAvailable}"/>
                                                 </td>
-                                                <c:choose>
-                                                    <c:when test="${playlistEntry.track.trackType.toString() == 'Song'}">
-                                                        <c:catch var="e">
-                                                            <td>
-                                                                <%//todo check if song then print info %>
-                                                                Track type: <c:out
-                                                                    value="${playlistEntry.track.trackType.toString()}"/>
-                                                                <br>
-                                                                Album: <c:out value="${playlistEntry.track.album}"/>
-                                                            </td>
-                                                        </c:catch>
-                                                    </c:when>
-                                                    <c:otherwise>
-                                                        <c:catch var="e">
-                                                            <td>
-                                                                Track type: <c:out
-                                                                    value="${playlistEntry.track.trackType.toString()}"/>
-                                                                <br>
-                                                                Publication date: <c:out
-                                                                    value="${playlistEntry.track.publicationDate}"/>
-                                                                <br>
-                                                                Play Count: <c:out
-                                                                    value="${playlistEntry.track.playCount}"/>
-                                                            </td>
-                                                        </c:catch>
-                                                    </c:otherwise>
-                                                </c:choose>
                                                 <td>
+                                                    Track type: <c:out
+                                                        value="${playlistEntry.track.trackType}"/>
+                                                </td>
+                                                <td>
+                                                    <form method="post"
+                                                          action="<%=request.getContextPath()%>/trackDetails?id=<c:out value="${playlistEntry.track.trackId}"/>">
+                                                        <button type="submit" name="trackId"
+                                                                value="<c:out value="${playlistEntry.track.trackId}"/>"
+                                                                class="btn btn-success btm-sm">Details
+                                                        </button>
+                                                    </form>
                                                     <form method="post">
                                                         <input type="hidden" name="playlistId"
                                                                value="<c:out value="${PLAYLIST.playlistId}"/>">

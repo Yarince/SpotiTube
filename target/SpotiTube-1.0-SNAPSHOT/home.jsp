@@ -90,7 +90,7 @@
         </div>
     </c:when>
     <c:otherwise>
-        <meta http-equiv="refresh" content="0; url='index.html'"/>
+        <meta http-equiv="refresh" content="0; url='index.html'" property=""/>
         <div class="alert alert-warning text-center">
             <p><a href="index.html">Please login!</a></p>
         </div>

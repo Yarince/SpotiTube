@@ -42,21 +42,6 @@ public class AddTrackPageController extends HttpServlet {
             WebClient webClient2 = WebClient.create("http://localhost:8080/").path("/tracks/notInPlaylist/" + playlistId).accept("application/json");
             Collection<? extends Track> tracksUnassigned = webClient2.getCollection(Track.class);
 
-//            Collection<Track> tracks = new ArrayList<>();
-//
-//            for (Track track : tracksUnassigned) {
-//                switch (track.getTrackType()) {
-//                    case Video:
-//                        Video video = (Video) track;
-//                        System.out.println("video.getPublicationDate() = " + video.getPublicationDate());
-//                        break;
-//                    case Song:
-//                        Song song = (Song) track;
-//                        System.out.println("video.getAlbum() = " + song.getAlbum());
-//                        break;
-//                }
-//            }
-
             req.setAttribute("TRACKS", tracksUnassigned);
             String trackId = req.getParameter("addTrackId");
             String offlineAvailable = req.getParameter("offlineAvailable" + trackId);

@@ -63,9 +63,16 @@
                                                 </td>
                                                 <td>
                                                     Track type: <c:out
-                                                        value="${playlistEntry.track.trackType.toString()}"/>
+                                                        value="${playlistEntry.track.trackType}"/>
                                                 </td>
                                                 <td>
+                                                    <form method="post"
+                                                          action="<%=request.getContextPath()%>/trackDetails?id=<c:out value="${playlistEntry.track.trackId}"/>">
+                                                        <button type="submit" name="trackId"
+                                                                value="<c:out value="${playlistEntry.track.trackId}"/>"
+                                                                class="btn btn-success btm-sm">Details
+                                                        </button>
+                                                    </form>
                                                     <form method="post">
                                                         <input type="hidden" name="playlistId"
                                                                value="<c:out value="${PLAYLIST.playlistId}"/>">

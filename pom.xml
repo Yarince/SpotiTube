@@ -35,13 +35,18 @@
         <dependency>
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-client</artifactId>
-            <version>1.8</version>
-            <scope>provided</scope>
+            <version>RELEASE</version>
         </dependency>
         <dependency>
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-json</artifactId>
             <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-core</artifactId>
+            <version>RELEASE</version>
+            <!--<scope>provided</scope>-->
         </dependency>
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
@@ -60,5 +65,4 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <failOnMissingWebXml>false</failOnMissingWebXml>
     </properties>
-
 </project>

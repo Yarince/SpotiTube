@@ -1,8 +1,8 @@
 <!-- Bootstrap -->
 <link href="<%=request.getContextPath()%>/css/bootstrap.css" rel="stylesheet">
 
-<link href="<%=request.getContextPath()%>/css/bootstrap-grid.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/css/bootstrap-reboot.css" rel="stylesheet">
+<%--<link href="<%=request.getContextPath()%>/css/bootstrap-grid.css" rel="stylesheet">--%>
+<%--<link href="<%=request.getContextPath()%>/css/bootstrap-reboot.css" rel="stylesheet">--%>
 <link href="<%=request.getContextPath()%>/css/bootstrap-theme.css" rel="stylesheet">
 
 <!-- Main site style -->

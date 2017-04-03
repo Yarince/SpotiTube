@@ -1,6 +1,5 @@
 package nl.han.oose.yarince.domain;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Playlist {
@@ -29,16 +28,6 @@ public class Playlist {
             totalLength += playlistEntry.getTrack().getDuration();
         }
         return totalLength;
-    }
-
-    public void changeName(String name) {
-        this.name = name;
-    }
-
-    //TODO toevoegen HIER MEE ID TOEVOEGEN IN DB
-    public void addTrack(Track track, boolean offlineAvailable) {
-        playlistEntries = new ArrayList<>();
-        playlistEntries.add(new PlaylistEntry(track, offlineAvailable));
     }
 
     public List<PlaylistEntry> getPlaylistEntries() {
