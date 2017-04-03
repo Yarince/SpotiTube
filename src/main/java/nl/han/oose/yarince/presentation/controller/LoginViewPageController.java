@@ -31,11 +31,9 @@ public class LoginViewPageController extends HttpServlet {
         String username = req.getParameter("Username");
         String password = req.getParameter("Password");
         HttpSession session = req.getSession();
-        User user = new User();
-        System.out.println(user);
+        User user = null;
         try {
             Client client = Client.create();
-            System.out.println("test2");
             WebResource webResource = client.resource("http://localhost:8080/loginService");
             ObjectMapper mapper = new ObjectMapper();
 
@@ -58,12 +56,12 @@ public class LoginViewPageController extends HttpServlet {
             e.printStackTrace();
         }
 
-        System.out.println(user.getUsername() + " = " + username);
-        System.out.println(user.getPassword() + " = " + password);
-        if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
-            session.setAttribute("USER", user);
-            resp.sendRedirect("/home");
-        } else
-            resp.sendRedirect("/login");
+        if (user != null) {
+            if (username.equals(user.getUsername()) && password.equals(user.getPassword())) {
+                session.setAttribute("USER", user);
+                resp.sendRedirect("/home");
+            } else
+                resp.sendRedirect("/login");
+        }
     }
 }

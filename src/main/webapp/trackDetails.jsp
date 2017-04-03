@@ -27,11 +27,11 @@
                     <table class="table table-striped table-hover">
                         <tr>
                             <td>
-                                Title: <c:out value="${TRACK.title}"/> <br>
-                                Performer: <c:out value="${TRACK.performer}"/> <br>
+                                Title: <c:out value="${TRACK.title}"/> <br><br><x></x>
+                                Performer: <c:out value="${TRACK.performer}"/>
                             </td>
                             <td>
-                                Duration: <c:out value="${TRACK.duration}"/> <br>
+                                Duration: <c:out value="${TRACK.duration}"/> <br><br>
                                 Track type:<c:out value="${TRACK.trackType}"/>
                             </td>
                             <c:choose>
@@ -42,8 +42,8 @@
                                 </c:when>
                                 <c:otherwise>
                                     <td>
-                                        Publication date: <c:out value="${VIDEO.publicationDate}"/>
-                                        Play count: <c:out value="${VIDEO.playCount}"/>
+                                        Publication date: <c:out value="${VIDEO.publicationDate}"/> <br>
+                                        Play count: <c:out value="${VIDEO.playCount}"/><br>
                                         Description: <c:out value="${VIDEO.description}"/>
                                     </td>
                                 </c:otherwise>

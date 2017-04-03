@@ -33,17 +33,13 @@
                                     Performer: <c:out value="${track.performer}"/> <br>
                                     Duration: <c:out value="${track.duration}"/>
                                 </td>
-                                    <td>
-                                    Track type:<c:out value="${track.trackType}"/> <br>
-                                    </td>
                                 <td>
-                                    <form method="post"
-                                          action="<%=request.getContextPath()%>/trackDetails?id=<c:out value="${track.trackId}"/>">
-                                        <button type="submit" name="trackId"
-                                                value="<c:out value="${track.trackId}"/>"
-                                                class="btn btn-success btm-sm">Details
-                                        </button>
-                                    </form>
+                                    Track type:<c:out value="${track.trackType}"/> <br>
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btm-sm"
+                                       href="<%=request.getContextPath()%>/trackDetails?id=<c:out value="${track.trackId}"/>">
+                                        Details</a>
                                 </td>
                                 <td>
                                     <form method="post">

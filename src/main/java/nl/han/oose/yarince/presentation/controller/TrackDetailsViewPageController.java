@@ -21,6 +21,7 @@ public class TrackDetailsViewPageController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doExecute(req, resp);
+        req.getRequestDispatcher("trackDetails.jsp").forward(req, resp);
     }
 
     @Override
@@ -30,6 +31,7 @@ public class TrackDetailsViewPageController extends HttpServlet {
 
     private void doExecute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String trackId = req.getParameter("id");
+
         WebClient client = WebClient.create("http://localhost:8080/").path("/tracks/id/" + trackId).accept("application/json");
 
         Track track = client.get(Track.class);
@@ -45,6 +47,6 @@ public class TrackDetailsViewPageController extends HttpServlet {
                 req.setAttribute("VIDEO", video);
                 break;
         }
-        req.getRequestDispatcher("../../trackdetails.jsp").forward(req, resp);
+
     }
 }

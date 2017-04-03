@@ -1,70 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19946fd7-6344-45c0-b0e7-a7a737903742" name="Default" comment="kapot + changes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/TrackDetailsViewPageController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-theme.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/trackDetails.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/lib/jackson-mapper-asl-1.9.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/lib/jersey-client-1.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/lib/jersey-core-1.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+    <list default="true" id="19946fd7-6344-45c0-b0e7-a7a737903742" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/datasource/mySQLImpl/MySQLConnection.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/datasource/mySQLImpl/MySQLConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/datasource/mySQLImpl/TrackDAOMySQL.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/datasource/mySQLImpl/TrackDAOMySQL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/domain/Playlist.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/domain/Playlist.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/domain/Video.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/domain/Video.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/presentation/controller/AddTrackPageController.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/presentation/controller/AddTrackPageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/presentation/controller/HomeViewPageController.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/presentation/controller/HomeViewPageController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/presentation/controller/LoginViewPageController.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/presentation/controller/LoginViewPageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/presentation/controller/PlaylistViewPageController.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/presentation/controller/PlaylistViewPageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/presentation/model/PlaylistModel.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/presentation/model/PlaylistModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/datasource/mySQLImpl/MySQLConnection.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/datasource/mySQLImpl/MySQLConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/datasource/mySQLImpl/TrackDAOMySQL.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/datasource/mySQLImpl/TrackDAOMySQL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/domain/Playlist.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/domain/Playlist.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/domain/Video.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/domain/Video.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/presentation/controller/AddTrackPageController.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/presentation/controller/AddTrackPageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/presentation/controller/HomeViewPageController.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/presentation/controller/HomeViewPageController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/presentation/controller/LoginViewPageController.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/presentation/controller/LoginViewPageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/presentation/controller/PlaylistViewPageController.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/presentation/controller/PlaylistViewPageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/presentation/model/PlaylistModel.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/presentation/model/PlaylistModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SpotiTube_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SpotiTube_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpotiTube.iml" afterPath="$PROJECT_DIR$/SpotiTube.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/mySQLImpl/TrackDAOMySQL.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/mySQLImpl/TrackDAOMySQL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Playlist.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Playlist.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Video.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Video.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/AddTrackPageController.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/AddTrackPageController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/LoginViewPageController.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/LoginViewPageController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/TrackDetailsViewPageController.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/TrackDetailsViewPageController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/TrackService.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/TrackService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/addTrack.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/addTrack.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/css.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/css/css.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/playlist.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/playlist.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/addTrack.jsp" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/addTrack.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/css/bootstrap.css" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/css/bootstrap.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/css/bootstrap.min.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/css/css.jsp" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/css/css.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/home.jsp" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/trackDetails.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/trackDetails.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/playlist.jsp" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/playlist.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_3.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_3.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -173,7 +121,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Playlist.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Playlist.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Playlist.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
@@ -185,33 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trackDetails.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/trackDetails.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="34" column="74" lean-forward="false" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TrackDetailsViewPageController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/TrackDetailsViewPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="47" column="37" lean-forward="false" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginViewPageController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/LoginViewPageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+            <state relative-caret-position="217">
+              <caret line="23" column="72" lean-forward="false" selection-start-line="23" selection-start-column="72" selection-end-line="23" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -222,9 +148,21 @@
       <file leaf-file-name="playlist.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/playlist.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="84">
+              <caret line="67" column="52" lean-forward="false" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrackService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/TrackService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="53" column="4" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+              <folding>
+                <element signature="e#1400#1401#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -275,8 +213,8 @@
       <file leaf-file-name="addTrack.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/addTrack.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="44" column="49" lean-forward="false" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+            <state relative-caret-position="280">
+              <caret line="40" column="107" lean-forward="false" selection-start-line="40" selection-start-column="107" selection-end-line="40" selection-end-column="107" />
               <folding />
             </state>
           </provider>
@@ -338,7 +276,6 @@
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/TrackInPlaylistService.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Song.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/ITrackDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/TrackService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/bootstrap-theme.css" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/PlaylistTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Track.java" />
@@ -370,13 +307,14 @@
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/AddTrackPageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Video.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/mySQLImpl/TrackDAOMySQL.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/TrackDetailsViewPageController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/css.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/trackDetails.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/addTrack.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/playlist.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/LoginViewPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/TrackDetailsViewPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/TrackService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/playlist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/addTrack.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/trackDetails.jsp" />
       </list>
     </option>
   </component>
@@ -1566,7 +1504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491215602540</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Hij doet het">
+      <created>1491219805078</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1491219805078</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1593,7 +1538,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237282000" />
+    <option name="totallyTimeSpent" value="238652000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1630,7 +1575,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3556059" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3114383" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16809882" sideWeight="0.50396377" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22180451" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
@@ -1689,7 +1634,8 @@
     <MESSAGE value="Het werkt weer" />
     <MESSAGE value="Login page + vercrakte nav bar" />
     <MESSAGE value="kapot + changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="kapot + changes" />
+    <MESSAGE value="Hij doet het" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hij doet het" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1892,19 +1838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/f69a41dc/cb14fc70-7956-42e7-8593-0fa5a7ea4320/spotitube.playlist">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/mySQLImpl/PlaylistDAOMySQL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
@@ -2024,14 +1957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/TrackService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14535">
@@ -2080,16 +2005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/TrackDetailsViewPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="47" column="37" lean-forward="false" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/css.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -2127,40 +2042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Playlist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding>
-            <element signature="method#Playlist#1;class#Playlist#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/trackDetails.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="34" column="74" lean-forward="false" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/addTrack.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="44" column="49" lean-forward="false" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/playlist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -2169,12 +2050,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="dbDummy://dbtable:/f69a41dc/cb14fc70-7956-42e7-8593-0fa5a7ea4320/spotitube.playlist">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/LoginViewPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+        <state relative-caret-position="616">
+          <caret line="58" column="24" lean-forward="false" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/TrackDetailsViewPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="23" column="72" lean-forward="false" selection-start-line="23" selection-start-column="72" selection-end-line="23" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/TrackService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="53" column="4" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+          <folding>
+            <element signature="e#1400#1401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/playlist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="67" column="52" lean-forward="false" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/addTrack.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="40" column="107" lean-forward="false" selection-start-line="40" selection-start-column="107" selection-end-line="40" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/trackDetails.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="29" column="82" lean-forward="false" selection-start-line="29" selection-start-column="82" selection-end-line="29" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Playlist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding>
+            <element signature="method#Playlist#1;class#Playlist#0" expanded="false" />
           </folding>
         </state>
       </provider>
