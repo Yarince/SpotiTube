@@ -1,39 +1,24 @@
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar_top">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <a class="navbar-brand" href="<%=request.getContextPath()%>/home">SpotiTube</a>
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <p><a class="brand" href="<%=request.getContextPath()%>/login">Spotitube</a></p>
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li class="active"><a href="<%=request.getContextPath()%>/home">Playlists</a></li>
+                </ul>
+                <ul class="nav pull-right">
+                    <li class="active">
+                        <form action="${pageContext.request.contextPath}/logout" method="post">
+                            <input class="active" type="submit" value="Logout"/>
+                        </form>
+                    </li>
+                </ul>
+            </div><!-- /.nav-collapse -->
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a href="<%=request.getContextPath()%>/home"><i class="fa fa-list" aria-hidden="true"></i> Playlists</a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="fa fa-search" aria-hidden="true"></i> Search <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <div id="dropdown_zoeken">
-                                <div class="input-group">
-                                    <input type="text" name="searchTb" class="form-control" placeholder="Search term">
-                                    <span class="input-group-btn">
-                                <button class="btn btn-secondary" type="button">Go!</button>
-                              </span>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <p class="navbar-text navbar-right">
-                <a href="#" class="navbar-link" data-toggle="modal"
-                   data-target="#login-modal">Logout</a>
-            </p>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
+    </div><!-- /navbar-inner -->
+</div>

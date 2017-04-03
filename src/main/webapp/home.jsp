@@ -1,3 +1,7 @@
+<%@ page import="javax.jws.soap.SOAPBinding" %>
+<%@ page import="nl.han.oose.yarince.domain.User" %>
+<%@ page import="nl.han.oose.yarince.domain.Playlist" %>
+<%@ page import="java.util.List" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
@@ -63,7 +67,8 @@
                                                         class="btn btn-success btm-sm">Delete playlist
                                                 </button>
                                             </form>
-                                            <form method="post" action="<%=request.getContextPath()%>/playlist/details/addTrack">
+                                            <form method="post"
+                                                  action="<%=request.getContextPath()%>/playlist/details/addTrack">
                                                 <button type="submit" name="playlistId"
                                                         value="<c:out value="${PLAYLIST.playlistId}"/>"
                                                         class="btn btn-success btm-sm">Add tracks
@@ -85,7 +90,7 @@
         </div>
     </c:when>
     <c:otherwise>
-        <meta http-equiv="refresh" content="0; url='index.html'"/>
+        <meta http-equiv="refresh" content="0; url='index.html'" property=""/>
         <div class="alert alert-warning text-center">
             <p><a href="index.html">Please login!</a></p>
         </div>

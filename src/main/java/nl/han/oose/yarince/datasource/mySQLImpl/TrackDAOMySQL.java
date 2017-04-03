@@ -1,6 +1,5 @@
 package nl.han.oose.yarince.datasource.mySQLImpl;
 
-import nl.han.oose.yarince.datasource.IConnection;
 import nl.han.oose.yarince.datasource.ITrackDAO;
 import nl.han.oose.yarince.domain.Song;
 import nl.han.oose.yarince.domain.Track;
@@ -17,13 +16,14 @@ import java.util.Calendar;
 import java.util.List;
 
 /**
+ * Project name: SpotiTube.
  * Created by Yarince on 20/03/2017.
  */
 @Default
 public class TrackDAOMySQL implements ITrackDAO {
 
     @Inject
-    private IConnection connection;
+    private IMySQLConnection connection;
 
     @Override
     public List<Track> getAllTracks() {
@@ -48,7 +48,7 @@ public class TrackDAOMySQL implements ITrackDAO {
         List<Track> resultList = new ArrayList<>();
         try (
                 Connection con = connection.getConnection();
-                PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM TRACK WHERE TRACK_ID NOT IN (SELECT TRACK_ID FROM track_in_playlist WHERE PLAYLIST_ID = ?)");
+                PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM TRACK WHERE TRACK_ID NOT IN (SELECT TRACK_ID FROM track_in_playlist WHERE PLAYLIST_ID = ?)")
         ) {
             preparedStatement.setInt(1,playlistId);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -65,7 +65,7 @@ public class TrackDAOMySQL implements ITrackDAO {
         List<Track> resultList = new ArrayList<>();
         try (
                 Connection con = connection.getConnection();
-                PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM TRACK WHERE TITLE = ?");
+                PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM TRACK WHERE TITLE = ?")
         ) {
             preparedStatement.setString(1, title);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -83,7 +83,7 @@ public class TrackDAOMySQL implements ITrackDAO {
         Track track = null;
         try (
                 Connection con = connection.getConnection();
-                PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM track WHERE TRACK_ID = ?");
+                PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM track WHERE TRACK_ID = ?")
         ) {
             preparedStatement.setInt(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -100,7 +100,7 @@ public class TrackDAOMySQL implements ITrackDAO {
         List<Track> resultList = new ArrayList<>();
         try (
                 Connection con = connection.getConnection();
-                PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM track WHERE TRACK_ID IN (SELECT TRACK_ID FROM track_in_playlist WHERE PLAYLIST_ID = ?)");
+                PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM track WHERE TRACK_ID IN (SELECT TRACK_ID FROM track_in_playlist WHERE PLAYLIST_ID = ?)")
         ) {
             preparedStatement.setInt(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();

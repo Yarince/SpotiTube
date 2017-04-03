@@ -1,6 +1,5 @@
 package nl.han.oose.yarince.datasource.mySQLImpl;
 
-import nl.han.oose.yarince.datasource.IConnection;
 import nl.han.oose.yarince.datasource.ITrackInPlaylistDAO;
 import nl.han.oose.yarince.domain.PlaylistEntry;
 
@@ -21,7 +20,7 @@ import java.util.List;
 public class TrackInPlaylistDAOMySQL implements ITrackInPlaylistDAO {
 
     @Inject
-    private IConnection connection;
+    private IMySQLConnection connection;
 
     @Inject
     private TrackDAOMySQL trackDAOMySQL;

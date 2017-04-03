@@ -1,27 +1,26 @@
 package nl.han.oose.yarince.datasource.mySQLImpl;
 
-import nl.han.oose.yarince.datasource.IConnection;
-
 import javax.enterprise.inject.Default;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
 
 /**
+ * Project name: SpotiTube.
  * Created by Yarince on 20/03/2017.
  */
 @Default
-public class MySQLConnection implements IConnection {
+public class MySQLConnection implements IMySQLConnection {
 
-    private static final String MYSQL_JDBC_DRIVER_CLASS = "com.mysql.cj.jdbc.Driver";
-    private static final String ITEM_DB_CONNECTION_STRING = "jdbc:mysql://127.0.0.1:3306/spotitube";
-    private static final String DB_USER = "java";
-    private static final String DB_PASSWORD = "password";
+    private static Properties properties = new Properties();
 
     static {
         try {
-            Class.forName(MYSQL_JDBC_DRIVER_CLASS);
-        } catch (ClassNotFoundException e) {
+            properties.load(MySQLConnection.class.getClassLoader().getResourceAsStream("config.properties"));
+            Class.forName(properties.getProperty("jdbc.driver"));
+        } catch (ClassNotFoundException | IOException e) {
             e.printStackTrace();
         }
     }
@@ -30,7 +29,7 @@ public class MySQLConnection implements IConnection {
     public Connection getConnection() {
         Connection con = null;
         try {
-            con = DriverManager.getConnection(ITEM_DB_CONNECTION_STRING, DB_USER, DB_PASSWORD);
+            con = DriverManager.getConnection(properties.getProperty("jdbc.url"), properties.getProperty("jdbc.username"), properties.getProperty("jdbc.password"));
         } catch (SQLException e) {
             e.printStackTrace();
         }

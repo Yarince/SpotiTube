@@ -13,7 +13,7 @@ import javax.ws.rs.Produces;
  * Project name: SpotiTube.
  * Created by Yarince on 27/03/2017.
  */
-@Path("/login")
+@Path("/loginService")
 public class UserService {
 
     @Inject

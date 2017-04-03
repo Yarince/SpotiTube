@@ -31,8 +31,9 @@
                         <label>
                             New Playlist Name: <input type="text" name="newPlaylistName" required="">
                         </label>
-                        <input type="submit" value="Save" name="newPlaylist" href="/home">
+                        <input type="submit" value="Save" name="newPlaylistNameSave">
                     </form>
+
                     <form method="post" action="<%=request.getContextPath()%>/playlist/details/addTrack">
                         <button type="submit" name="playlistId"
                                 value="<c:out value="${PLAYLIST.playlistId}"/>"
@@ -60,33 +61,10 @@
                                                     Offline available: <c:out
                                                         value="${playlistEntry.offlineAvailable}"/>
                                                 </td>
-                                                <c:choose>
-                                                    <c:when test="${playlistEntry.track.trackType.toString() == 'Song'}">
-                                                        <c:catch var="e">
-                                                            <td>
-                                                                <%//todo check if song then print info %>
-                                                                Track type: <c:out
-                                                                    value="${playlistEntry.track.trackType.toString()}"/>
-                                                                <br>
-                                                                Album: <c:out value="${playlistEntry.track.album}"/>
-                                                            </td>
-                                                        </c:catch>
-                                                    </c:when>
-                                                    <c:otherwise>
-                                                        <c:catch var="e">
-                                                            <td>
-                                                                Track type: <c:out
-                                                                    value="${playlistEntry.track.trackType.toString()}"/>
-                                                                <br>
-                                                                Publication date: <c:out
-                                                                    value="${playlistEntry.track.publicationDate}"/>
-                                                                <br>
-                                                                Play Count: <c:out
-                                                                    value="${playlistEntry.track.playCount}"/>
-                                                            </td>
-                                                        </c:catch>
-                                                    </c:otherwise>
-                                                </c:choose>
+                                                <td>
+                                                    Track type: <c:out
+                                                        value="${playlistEntry.track.trackType.toString()}"/>
+                                                </td>
                                                 <td>
                                                     <form method="post">
                                                         <input type="hidden" name="playlistId"
@@ -121,6 +99,6 @@
         </div>
     </c:otherwise>
 </c:choose>
-<jsp:include page="Imports/footer.jsp"></jsp:include>
+<jsp:include page="Imports/footer.jsp"/>
 </body>
 </html>

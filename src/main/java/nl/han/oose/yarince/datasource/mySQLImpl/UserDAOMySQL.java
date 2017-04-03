@@ -1,6 +1,5 @@
 package nl.han.oose.yarince.datasource.mySQLImpl;
 
-import nl.han.oose.yarince.datasource.IConnection;
 import nl.han.oose.yarince.datasource.IUserDAO;
 import nl.han.oose.yarince.domain.User;
 
@@ -17,7 +16,7 @@ import java.sql.SQLException;
 public class UserDAOMySQL implements IUserDAO {
 
     @Inject
-    private IConnection connection;
+    private IMySQLConnection connection;
 
     @Override
     public User login(User user) {
@@ -25,7 +24,7 @@ public class UserDAOMySQL implements IUserDAO {
         User result = null;
         try (
                 Connection con = connection.getConnection();
-                PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM user WHERE USERNAME = ? and PASSWORD = ?");
+                PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM user WHERE USERNAME = ? and PASSWORD = ?")
         ) {
             preparedStatement.setString(1,user.getUsername());
             preparedStatement.setString(2,user.getPassword());

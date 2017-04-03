@@ -18,7 +18,7 @@ import java.io.IOException;
  * Project name: SpotiTube.
  * Created by Yarince on 27/03/2017.
  */
-@WebServlet("/index.html")
+@WebServlet("/login")
 public class LoginViewPageController extends HttpServlet {
 
     @Override
@@ -35,7 +35,7 @@ public class LoginViewPageController extends HttpServlet {
 
         try {
             Client client = Client.create();
-            WebResource webResource = client.resource("http://localhost:8080/login");
+            WebResource webResource = client.resource("http://localhost:8080/loginService");
             ObjectMapper mapper = new ObjectMapper();
 
             String input = "{\"username\":\"" + username + "\",\"password\":\"" + password + "\"}"; //this will be the input from the user
@@ -43,13 +43,14 @@ public class LoginViewPageController extends HttpServlet {
             ClientResponse response = webResource.type("application/json").post(ClientResponse.class, input);
 
             //check if response is successful
-            if ((response.getStatus() < 200 && response.getStatus() >= 300)&& response.getStatus() != 204)
+            if ((response.getStatus() < 200 && response.getStatus() >= 300) && response.getStatus() != 204)
                 throw new RuntimeException("Failed: HTTP error code:" + response.getStatus());
 
             //Response
             String userString = response.getEntity(String.class);
 
             //JSON from string to Object
+//            if (response.getStatus() != 204)
             user = mapper.readValue(userString, User.class);
 
 
@@ -57,9 +58,12 @@ public class LoginViewPageController extends HttpServlet {
             e.printStackTrace();
         }
 
-        if (user != null) {
+        System.out.println(user.getUsername() + " = " + username);
+        System.out.println(user.getPassword() + " = " + password);
+        if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
             session.setAttribute("USER", user);
             resp.sendRedirect("/home");
-        }
+        } else
+            resp.sendRedirect("/login");
     }
 }

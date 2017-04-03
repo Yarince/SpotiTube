@@ -32,15 +32,30 @@ public class PlaylistViewPageController extends HttpServlet {
         req.setAttribute("USER", req.getSession().getAttribute("USER"));
 
         String playlistId = req.getParameter("playlistId");
-
-
         if (!StringUtils.isEmptyOrWhitespaceOnly(playlistId)) {
-            System.out.println("playlistId = " + playlistId);
+
             WebClient webClient = WebClient.create("http://localhost:8080/").path("/playlists/id/" + playlistId).accept("application/json");
             Playlist playlist = webClient.get(Playlist.class);
-            req.setAttribute("PLAYLIST", playlist);
 
+            req.setAttribute("PLAYLIST", playlist);
             req.setAttribute("TRACKS", playlist.getPlaylistEntries());
+
+            String newPlaylistName = req.getParameter("newPlaylistName");
+            String newPlaylistNameSave = req.getParameter("newPlaylistNameSave");
+            if (!StringUtils.isEmptyOrWhitespaceOnly(newPlaylistName) && "Save".equals(newPlaylistNameSave)) {
+
+                Client client = Client.create();
+                WebResource webResource = client.resource("http://localhost:8080/playlists/save");
+
+                String input = "{\"playlistId\":" + playlistId + ",\"name\":\"" + newPlaylistName + "\"}";
+
+                ClientResponse response = webResource.type("application/json").post(ClientResponse.class, input);
+
+                //check if response is successful
+                if (response.getStatus() < 200 && response.getStatus() >= 300)
+                    throw new RuntimeException("Failed: HTTP error code:" + response.getStatus());
+                System.out.println(input + "\n" + "Message recieved");
+            }
 
             String deleteTrackId = req.getParameter("deleteTrackId");
 

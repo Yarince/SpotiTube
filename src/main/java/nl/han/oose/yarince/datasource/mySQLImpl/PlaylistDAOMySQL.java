@@ -1,11 +1,9 @@
 package nl.han.oose.yarince.datasource.mySQLImpl;
 
 
-import nl.han.oose.yarince.datasource.IConnection;
 import nl.han.oose.yarince.datasource.IPlaylistDAO;
 import nl.han.oose.yarince.datasource.ITrackInPlaylistDAO;
 import nl.han.oose.yarince.domain.Playlist;
-import nl.han.oose.yarince.domain.PlaylistEntry;
 
 import javax.enterprise.inject.Default;
 import javax.inject.Inject;
@@ -26,7 +24,7 @@ public class PlaylistDAOMySQL implements IPlaylistDAO {
      * Set connection class
      */
     @Inject
-    private IConnection connection;
+    private IMySQLConnection connection;
 
     @Inject
     private ITrackInPlaylistDAO trackInPlaylistDAO;
@@ -105,9 +103,6 @@ public class PlaylistDAOMySQL implements IPlaylistDAO {
         ) {
             preparedStatement.setString(1, playlist.getName());
             preparedStatement.setInt(2, playlist.getPlaylistId());
-            for (PlaylistEntry playlistEntry : playlist.getPlaylistEntries()) {
-                trackInPlaylistDAO.add(playlistEntry, playlist.getPlaylistId());
-            }
             preparedStatement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
