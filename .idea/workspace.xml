@@ -1,38 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19946fd7-6344-45c0-b0e7-a7a737903742" name="Default" comment="User service test">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_4_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_5_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_3_5_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/IJPAConnection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/JPAConnection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/PlaylistDAOJPA.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/TrackDAOJPA.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/TrackInPlaylistDAOJPA.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/UserDAOJPA.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/persistence.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/playlistEntryServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SpotiTube_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SpotiTube_war_exploded.xml" />
+    <list default="true" id="19946fd7-6344-45c0-b0e7-a7a737903742" name="Default" comment="onderzoek stap 1">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpotiTube.iml" afterPath="$PROJECT_DIR$/SpotiTube.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Song.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Song.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Track.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Track.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Video.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Video.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/UserServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/UserServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/META-INF/beans.xml" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/META-INF/beans.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/UserMockDAO.java" afterPath="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/mock/UserMockDAO.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -159,8 +129,8 @@
       <file leaf-file-name="TrackInPlaylistDAOJPA.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/TrackInPlaylistDAOJPA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            <state relative-caret-position="420">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
                 <marker date="1491301899289" expanded="true" signature="1615:1666" ph="DELETE FROM " />
                 <marker date="1491301899289" expanded="true" signature="2128:2158" ph="SELECT *FROM... track_in_playlist" />
@@ -175,16 +145,17 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/TrackDAOJPA.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="42" column="45" lean-forward="false" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+              <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
               <folding>
-                <marker date="1491305315371" expanded="true" signature="1222:1326" ph="SELECT * FRO... TRACK" />
-                <marker date="1491305315371" expanded="true" signature="1265:1325" ph="SELECT TRACK... track_in_playlist" />
-                <marker date="1491305315371" expanded="true" signature="1773:1894" ph="SELECT * FRO... TRACK" />
-                <marker date="1491305315371" expanded="true" signature="1816:1876" ph="SELECT TRACK... track_in_playlist" />
-                <marker date="1491305315371" expanded="true" signature="2574:2609" ph="SELECT * FRO... TRACK" />
-                <marker date="1491305315371" expanded="true" signature="3201:3239" ph="SELECT * FRO... track" />
-                <marker date="1491305315371" expanded="true" signature="3832:3932" ph="SELECT * FRO... track" />
-                <marker date="1491305315371" expanded="true" signature="3871:3931" ph="SELECT TRACK... track_in_playlist" />
+                <element signature="imports" expanded="false" />
+                <marker date="1491310093326" expanded="true" signature="1175:1279" ph="SELECT * FRO... TRACK" />
+                <marker date="1491310093326" expanded="true" signature="1218:1278" ph="SELECT TRACK... track_in_playlist" />
+                <marker date="1491310093326" expanded="true" signature="1726:1847" ph="SELECT * FRO... TRACK" />
+                <marker date="1491310093326" expanded="true" signature="1769:1829" ph="SELECT TRACK... track_in_playlist" />
+                <marker date="1491310093326" expanded="true" signature="2527:2562" ph="SELECT * FRO... TRACK" />
+                <marker date="1491310093326" expanded="true" signature="3154:3192" ph="SELECT * FRO... track" />
+                <marker date="1491310093326" expanded="true" signature="3785:3885" ph="SELECT * FRO... track" />
+                <marker date="1491310093326" expanded="true" signature="3824:3884" ph="SELECT TRACK... track_in_playlist" />
               </folding>
             </state>
           </provider>
@@ -1585,7 +1556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1491294701184</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="onderzoek stap 1">
+      <created>1491310094725</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1491310094725</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1621,7 +1599,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267387000" />
+    <option name="totallyTimeSpent" value="267795000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1710,10 +1688,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Geweldig, en nu werken!" />
     <MESSAGE value="Wat een feest" />
     <MESSAGE value="Het werkt weer" />
@@ -1726,7 +1710,9 @@
     <MESSAGE value="fixes" />
     <MESSAGE value="NoSQL Implementation" />
     <MESSAGE value="User service test" />
-    <option name="LAST_COMMIT_MESSAGE" value="User service test" />
+    <MESSAGE value="onderzoek stap 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="onderzoek stap 1" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2148,16 +2134,17 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/TrackDAOJPA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="42" column="45" lean-forward="false" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+          <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
           <folding>
-            <marker date="1491305315371" expanded="true" signature="1222:1326" ph="SELECT * FRO... TRACK" />
-            <marker date="1491305315371" expanded="true" signature="1265:1325" ph="SELECT TRACK... track_in_playlist" />
-            <marker date="1491305315371" expanded="true" signature="1773:1894" ph="SELECT * FRO... TRACK" />
-            <marker date="1491305315371" expanded="true" signature="1816:1876" ph="SELECT TRACK... track_in_playlist" />
-            <marker date="1491305315371" expanded="true" signature="2574:2609" ph="SELECT * FRO... TRACK" />
-            <marker date="1491305315371" expanded="true" signature="3201:3239" ph="SELECT * FRO... track" />
-            <marker date="1491305315371" expanded="true" signature="3832:3932" ph="SELECT * FRO... track" />
-            <marker date="1491305315371" expanded="true" signature="3871:3931" ph="SELECT TRACK... track_in_playlist" />
+            <element signature="imports" expanded="false" />
+            <marker date="1491310093326" expanded="true" signature="1175:1279" ph="SELECT * FRO... TRACK" />
+            <marker date="1491310093326" expanded="true" signature="1218:1278" ph="SELECT TRACK... track_in_playlist" />
+            <marker date="1491310093326" expanded="true" signature="1726:1847" ph="SELECT * FRO... TRACK" />
+            <marker date="1491310093326" expanded="true" signature="1769:1829" ph="SELECT TRACK... track_in_playlist" />
+            <marker date="1491310093326" expanded="true" signature="2527:2562" ph="SELECT * FRO... TRACK" />
+            <marker date="1491310093326" expanded="true" signature="3154:3192" ph="SELECT * FRO... track" />
+            <marker date="1491310093326" expanded="true" signature="3785:3885" ph="SELECT * FRO... track" />
+            <marker date="1491310093326" expanded="true" signature="3824:3884" ph="SELECT TRACK... track_in_playlist" />
           </folding>
         </state>
       </provider>
@@ -2200,8 +2187,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/TrackInPlaylistDAOJPA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="420">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
             <marker date="1491301899289" expanded="true" signature="1615:1666" ph="DELETE FROM " />
             <marker date="1491301899289" expanded="true" signature="2128:2158" ph="SELECT *FROM... track_in_playlist" />
