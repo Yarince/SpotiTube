@@ -16,6 +16,14 @@
         <div id="fullpage_container">
             <div class="container" id="page_container">
                 <div class="row">
+                    <div class="col-lg-12 text-left">
+                        <form action="<%=request.getContextPath()%>/playlist/details" method="post">
+                            <button type="submit" name="playlistId"
+                                    value="<c:out value="${PLAYLIST.playlistId}"/>"
+                                    class="btn btn-success btm-sm">Back
+                            </button>
+                        </form>
+                    </div>
                     <div class="col-lg-12 text-center">
                         <h3> Playlist name: <c:out value="${PLAYLIST.name}"/></h3>
                         <br>

@@ -19,6 +19,11 @@
         <div id="fullpage_container">
             <div class="container" id="page_container">
                 <div class="row">
+                    <div class="col-lg-12 text-left">
+                        <form action="" method="post">
+                            <a href="<%=request.getContextPath()%>/home" class="btn btn-success btm-sm">Back</a>
+                        </form>
+                    </div>
                     <div class="col-lg-12 text-center">
                         <h3> Playlist: <c:out value="${PLAYLIST.name}"/></h3>
                         <br>
