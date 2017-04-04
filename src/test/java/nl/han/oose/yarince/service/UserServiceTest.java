@@ -1,6 +1,7 @@
 package nl.han.oose.yarince.service;
 
 import nl.han.oose.yarince.domain.User;
+import nl.han.oose.yarince.service.mock.UserMockDAO;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
