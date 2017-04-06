@@ -22,10 +22,12 @@ public class Playlist {
     public Playlist() {
     }
 
-    public long getTotalLength() {
+    private long getTotalLength() {
         long totalLength = 0;
         for (PlaylistEntry playlistEntry : this.playlistEntries) {
-            totalLength += playlistEntry.getTrack().getDuration();
+            Track track = playlistEntry.getTrack();
+            if (track != null)
+                totalLength += track.getDuration();
         }
         return totalLength;
     }

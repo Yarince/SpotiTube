@@ -57,6 +57,6 @@ public class PlaylistService {
     @Consumes("application/json")
     public String save(Playlist playlist) {
         playlistDAO.save(playlist);
-        return "Plalist " + playlist.getPlaylistId() + " Name changed to: " + playlist.getName();
+        return "Playlist " + playlist.getPlaylistId() + " Name changed to: " + playlist.getName();
     }
 }

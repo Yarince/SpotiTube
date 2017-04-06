@@ -17,7 +17,7 @@ import javax.ws.rs.Produces;
 public class UserService {
 
     @Inject
-    IUserDAO userDAO;
+    private IUserDAO userDAO;
 
     @POST
     @Consumes("application/json")
