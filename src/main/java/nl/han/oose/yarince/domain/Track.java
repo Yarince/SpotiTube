@@ -1,11 +1,18 @@
 package nl.han.oose.yarince.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Track {
+
+    @Id
+    private int trackId;
     private String performer,
             title,
             url;
-    private int trackId;
     private long duration;
+
     private TrackType trackType;
 
     public Track() {

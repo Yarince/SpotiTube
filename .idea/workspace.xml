@@ -1,32 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19946fd7-6344-45c0-b0e7-a7a737903742" name="Default" comment="Mockito tests">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_10_19.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/PlaylistServiceTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_0_0_M3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_0_0_M3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_0_0_M1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/PlaylistDAONoSQL.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/TrackDAONoSQL.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/TrackInPlaylistDAONoSQL.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/UserDAONoSQL.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/service/UserServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/service/mock/UserMockDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/service/playlistEntryServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/nl/han/oose/yarince/UserServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/nl/han/oose/yarince/userMockDAO.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SpotiTube_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SpotiTube_war_exploded.xml" />
+    <list default="true" id="19946fd7-6344-45c0-b0e7-a7a737903742" name="Default" comment="onderzoek stap 1">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpotiTube.iml" afterPath="$PROJECT_DIR$/SpotiTube.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Playlist.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Playlist.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/PlaylistService.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/PlaylistService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/UserServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/UserServiceTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,16 +14,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/SpotiTube$nl_han_oose_yarince_service_in_SpotiTube.coverage" NAME="nl.han.oose.yarince.service in SpotiTube Coverage Results" MODIFIED="1491492339597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>nl.han.oose.yarince.service.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/SpotiTube$PlaylistTest_addTrack.coverage" NAME="PlaylistTest.addTrack Coverage Results" MODIFIED="1491123873164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>nl.han.oose.yarince.domain.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/SpotiTube$UserServiceTest_login__1_.coverage" NAME="UserServiceTest.login (1) Coverage Results" MODIFIED="1491296785639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>nl.han.oose.yarince.service.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/SpotiTube$PlaylistServiceTest.coverage" NAME="PlaylistServiceTest Coverage Results" MODIFIED="1491492327685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>nl.han.oose.yarince.service.*</FILTER>
     </SUITE>
   </component>
@@ -147,22 +117,67 @@
       <file leaf-file-name="Playlist.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Playlist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="50" column="15" lean-forward="false" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+            <state relative-caret-position="303">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="method#Playlist#1;class#Playlist#0" expanded="false" />
-                <element signature="e#1193#1194#0" expanded="true" />
-                <element signature="e#1226#1227#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlaylistService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/PlaylistService.java">
+      <file leaf-file-name="TrackInPlaylistDAOJPA.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/TrackInPlaylistDAOJPA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="26" column="79" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="79" />
+            <state relative-caret-position="420">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding>
+                <marker date="1491301899289" expanded="true" signature="1615:1666" ph="DELETE FROM " />
+                <marker date="1491301899289" expanded="true" signature="2128:2158" ph="SELECT *FROM... track_in_playlist" />
+                <marker date="1491301899289" expanded="true" signature="2756:2808" ph="SELECT *FROM... track_in_playlist" />
+                <marker date="1491301899289" expanded="true" signature="3405:3473" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrackDAOJPA.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/TrackDAOJPA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <marker date="1491310093326" expanded="true" signature="1175:1279" ph="SELECT * FRO... TRACK" />
+                <marker date="1491310093326" expanded="true" signature="1218:1278" ph="SELECT TRACK... track_in_playlist" />
+                <marker date="1491310093326" expanded="true" signature="1726:1847" ph="SELECT * FRO... TRACK" />
+                <marker date="1491310093326" expanded="true" signature="1769:1829" ph="SELECT TRACK... track_in_playlist" />
+                <marker date="1491310093326" expanded="true" signature="2527:2562" ph="SELECT * FRO... TRACK" />
+                <marker date="1491310093326" expanded="true" signature="3154:3192" ph="SELECT * FRO... track" />
+                <marker date="1491310093326" expanded="true" signature="3785:3885" ph="SELECT * FRO... track" />
+                <marker date="1491310093326" expanded="true" signature="3824:3884" ph="SELECT TRACK... track_in_playlist" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDAOJPA.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/UserDAOJPA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+              <folding>
+                <marker date="1491300248956" expanded="true" signature="745:799" ph="SELECT * FRO... user" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JPAConnection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/JPAConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,11 +185,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlaylistServiceTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/PlaylistServiceTest.java">
+      <file leaf-file-name="Track.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Track.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+            <state relative-caret-position="294">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -182,12 +197,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrackService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/TrackService.java">
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-386">
-              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="147">
+              <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlaylistDAOJPA.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/PlaylistDAOJPA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-378">
+              <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+              <folding>
+                <marker date="1491300249258" expanded="true" signature="1070:1092" ph="SELECT * FRO... PLAYLIST" />
+                <marker date="1491300249258" expanded="true" signature="1785:1827" ph="SELECT * FRO... PLAYLIST" />
+                <marker date="1491300249258" expanded="true" signature="2529:2577" ph="SELECT * FRO... PLAYLIST" />
+                <marker date="1491300249258" expanded="true" signature="3186:3236" ph="UPDATE playl... " />
+                <marker date="1491300249258" expanded="true" signature="3792:3834" ph="DELETE FROM " />
+                <marker date="1491300249258" expanded="true" signature="4362:4408" ph="INSERT INTO PLAYLIST... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -206,8 +248,6 @@
         <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="Persistence File" />
-        <option value="Arquillian JUnit Test Class" />
-        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -230,37 +270,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="REMOTE">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="origin/Onderzoek-opdracht" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
-    <excluded-from-favorite>
-      <branch-storage>
-        <map>
-          <entry type="REMOTE">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </excluded-from-favorite>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -274,6 +283,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/css.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/trackDetails.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/ITrackDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/mySQLImpl/TrackDAOMySQL.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/TrackService.java" />
@@ -286,6 +299,7 @@
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/TrackDetailsViewPageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/INoSQLConnect.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/NoSQLConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Playlist.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/TrackDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/PlaylistDAO.java" />
@@ -299,8 +313,10 @@
         <option value="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/loginMockDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/userMockDAO.java" />
         <option value="$PROJECT_DIR$/src/test/resources/META-INF/beans.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/test/nl/han/oose/yarince/UserServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/UserServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/userMockDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/UserMockDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/mock/UserMockDAO.java" />
@@ -311,20 +327,13 @@
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/UserDAOJPA.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/IJPAConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/TrackInPlaylistDAOJPA.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/JPAConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/TrackDAOJPA.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Song.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Video.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Track.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/UserService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/UserServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/domain/PlaylistTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/PlaylistTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Playlist.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/PlaylistService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/PlaylistServiceTest.java" />
       </list>
     </option>
   </component>
@@ -458,10 +467,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="yarince" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -488,7 +493,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="yarince" />
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mock" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -674,6 +683,108 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpotiTube" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpotiTube" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yarince" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datasource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="noSQLImpl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpotiTube" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpotiTube" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yarince" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datasource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mySQLImpl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpotiTube" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpotiTube" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yarince" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datasource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JPAImpl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -694,10 +805,9 @@
     <property name="project.structure.proportion" value="0.146875" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service" />
-    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -708,9 +818,9 @@
       <recent name="nl.han.oose.yarince.datasource" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="nl.han.oose.yarince.domain" />
       <recent name="nl.han.oose.yarince.service" />
       <recent name="java.nl.han.oose.yarince" />
+      <recent name="nl.han.oose.yarince.domain" />
     </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="nl.han.oose.yarince.domain" />
@@ -819,111 +929,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.nl.han.oose.yarince.service in SpotiTube">
-    <configuration default="false" name="UserServiceTest.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="nl.han.oose.yarince.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SpotiTube" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="nl.han.oose.yarince.service" />
-      <option name="MAIN_CLASS_NAME" value="nl.han.oose.yarince.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="login" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="nl.han.oose.yarince.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SpotiTube" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="nl.han.oose.yarince.service" />
-      <option name="MAIN_CLASS_NAME" value="nl.han.oose.yarince.service.UserServiceTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="PlaylistServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="nl.han.oose.yarince.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SpotiTube" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="nl.han.oose.yarince.service" />
-      <option name="MAIN_CLASS_NAME" value="nl.han.oose.yarince.service.PlaylistServiceTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="nl.han.oose.yarince.service in SpotiTube" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="nl.han.oose.yarince.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SpotiTube" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="nl.han.oose.yarince.service" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Tomcat Server.TomEE">
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -1445,21 +1451,9 @@
         </option>
       </method>
     </configuration>
-    <list size="5">
+    <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.TomEE" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UserServiceTest.login" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UserServiceTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PlaylistServiceTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.nl.han.oose.yarince.service in SpotiTube" />
     </list>
-    <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.nl.han.oose.yarince.service in SpotiTube" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PlaylistServiceTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UserServiceTest.login" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UserServiceTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -1569,50 +1563,43 @@
       <option name="project" value="LOCAL" />
       <updated>1491310094725</updated>
     </task>
-    <task id="LOCAL-00013" summary="onderzoek rapport">
-      <created>1491310457813</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1491310457813</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PlaylistServiceTest - 2017.04.06 at 17h 22m 24s.xml">
-      <configuration name="PlaylistServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest - 2017.04.04 at 10h 15m 20s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlaylistServiceTest - 2017.04.06 at 17h 22m 54s.xml">
-      <configuration name="PlaylistServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest - 2017.04.04 at 10h 28m 34s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlaylistServiceTest - 2017.04.06 at 17h 23m 17s.xml">
-      <configuration name="PlaylistServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest - 2017.04.04 at 10h 29m 28s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlaylistServiceTest - 2017.04.06 at 17h 23m 24s.xml">
-      <configuration name="PlaylistServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest - 2017.04.04 at 10h 30m 56s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlaylistServiceTest - 2017.04.06 at 17h 25m 08s.xml">
-      <configuration name="PlaylistServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_(1) - 2017.04.04 at 10h 20m 21s.xml">
+      <configuration name="UserServiceTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlaylistServiceTest - 2017.04.06 at 17h 25m 10s.xml">
-      <configuration name="PlaylistServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_(1) - 2017.04.04 at 10h 20m 37s.xml">
+      <configuration name="UserServiceTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlaylistServiceTest - 2017.04.06 at 17h 25m 19s.xml">
-      <configuration name="PlaylistServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_(1) - 2017.04.04 at 10h 22m 22s.xml">
+      <configuration name="UserServiceTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlaylistServiceTest - 2017.04.06 at 17h 25m 28s.xml">
-      <configuration name="PlaylistServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_login - 2017.04.04 at 10h 14m 28s.xml">
+      <configuration name="UserServiceTest.login" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="nl_han_oose_yarince_service_in_SpotiTube - 2017.04.06 at 17h 25m 38s.xml">
-      <configuration name="nl.han.oose.yarince.service in SpotiTube" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_login_(1) - 2017.04.04 at 11h 06m 26s.xml">
+      <configuration name="UserServiceTest.login (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="nl_han_oose_yarince_service_in_SpotiTube - 2017.04.06 at 17h 25m 40s.xml">
-      <configuration name="nl.han.oose.yarince.service in SpotiTube" configurationId="JUnit" />
+    <history-entry file="nl_han_oose_yarince_in_SpotiTube - 2017.04.04 at 10h 24m 06s.xml">
+      <configuration name="nl.han.oose.yarince in SpotiTube" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="275316000" />
+    <option name="totallyTimeSpent" value="267795000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1625,17 +1612,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14722537" sideWeight="0.5021482" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11331901" sideWeight="0.49244714" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22878624" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20891514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16809882" sideWeight="0.49603623" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16809882" sideWeight="0.49603623" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.083243825" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1648,12 +1636,12 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39184597" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33408833" sideWeight="0.49785176" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13703284" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25028312" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11331901" sideWeight="0.50755286" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08946773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38618347" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16809882" sideWeight="0.50396377" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18635875" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22180451" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17024705" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4688562" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1723,13 +1711,12 @@
     <MESSAGE value="NoSQL Implementation" />
     <MESSAGE value="User service test" />
     <MESSAGE value="onderzoek stap 1" />
-    <MESSAGE value="onderzoek rapport" />
-    <option name="LAST_COMMIT_MESSAGE" value="onderzoek rapport" />
+    <option name="LAST_COMMIT_MESSAGE" value="onderzoek stap 1" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1738,10 +1725,47 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/PlaylistViewPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="61" column="46" lean-forward="false" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/UserDAONoSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#366#367#0" expanded="false" />
+            <element signature="e#393#394#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/INoSQLConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="19" column="55" lean-forward="false" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/addTrack.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="22" column="65" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1753,26 +1777,173 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/UserServiceTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/config.properties" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/TrackService.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/datasource/ITrackInPlaylistDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/datasource/ITrackDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/datasource/noSQLImpl/UserDAONoSQL.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/datasource/noSQLImpl/TrackInPlaylistDAONoSQL.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/domain/TrackType.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/datasource/noSQLImpl/PlaylistDAONoSQL.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/playlistEntryService.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/datasource/IPlaylistDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/datasource/IConnection.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/UserService.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/asdsaf" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/sadfsadf" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/META-INF/beans.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/PlaylistDAONoSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-245">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/TrackDAONoSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-392">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/PlaylistService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/UserServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/TrackService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/datasource/ITrackInPlaylistDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/datasource/ITrackDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/datasource/noSQLImpl/UserDAONoSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/datasource/noSQLImpl/TrackInPlaylistDAONoSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/domain/TrackType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/datasource/noSQLImpl/PlaylistDAONoSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/playlistEntryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/datasource/IPlaylistDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/datasource/IConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/asdsaf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sadfsadf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/META-INF/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1781,6 +1952,16 @@
         <state relative-caret-position="147">
           <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#576#577#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1794,6 +1975,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/UserServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/TrackService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/playlistEntryService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1804,13 +2003,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/mock/TrackInPlaylistDAONoSQL.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/mock/UserMockDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/playlistEntryServiceTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/mock/TrackInPlaylistDAONoSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/mock/UserMockDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/TrackInPlaylistDAONoSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/playlistEntryServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/mySQLImpl/MySQLConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1818,6 +2051,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1838,12 +2072,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/IJPAConnection.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/PlaylistDAOJPA.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/persistence.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/UserDAOJPA.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/JPAConnection.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/TrackDAOJPA.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/IJPAConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/PlaylistDAOJPA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378">
+          <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding>
+            <marker date="1491300249258" expanded="true" signature="1070:1092" ph="SELECT * FRO... PLAYLIST" />
+            <marker date="1491300249258" expanded="true" signature="1785:1827" ph="SELECT * FRO... PLAYLIST" />
+            <marker date="1491300249258" expanded="true" signature="2529:2577" ph="SELECT * FRO... PLAYLIST" />
+            <marker date="1491300249258" expanded="true" signature="3186:3236" ph="UPDATE playl... " />
+            <marker date="1491300249258" expanded="true" signature="3792:3834" ph="DELETE FROM " />
+            <marker date="1491300249258" expanded="true" signature="4362:4408" ph="INSERT INTO PLAYLIST... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/UserDAOJPA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding>
+            <marker date="1491300248956" expanded="true" signature="745:799" ph="SELECT * FRO... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/JPAConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/TrackDAOJPA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="41" column="45" lean-forward="false" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1491310093326" expanded="true" signature="1175:1279" ph="SELECT * FRO... TRACK" />
+            <marker date="1491310093326" expanded="true" signature="1218:1278" ph="SELECT TRACK... track_in_playlist" />
+            <marker date="1491310093326" expanded="true" signature="1726:1847" ph="SELECT * FRO... TRACK" />
+            <marker date="1491310093326" expanded="true" signature="1769:1829" ph="SELECT TRACK... track_in_playlist" />
+            <marker date="1491310093326" expanded="true" signature="2527:2562" ph="SELECT * FRO... TRACK" />
+            <marker date="1491310093326" expanded="true" signature="3154:3192" ph="SELECT * FRO... track" />
+            <marker date="1491310093326" expanded="true" signature="3785:3885" ph="SELECT * FRO... track" />
+            <marker date="1491310093326" expanded="true" signature="3824:3884" ph="SELECT TRACK... track_in_playlist" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Playlist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="method#Playlist#1;class#Playlist#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Video.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -1862,157 +2177,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Track.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <marker date="1491311217446" expanded="true" signature="229:236" ph="{...}" />
-            <marker date="1491311217446" expanded="true" signature="348:545" ph="{...}" />
-            <marker date="1491311217446" expanded="false" signature="574:585" ph=" { " />
-            <marker date="1491311217446" expanded="false" signature="600:606" ph=" }" />
-            <marker date="1491311217446" expanded="false" signature="640:651" ph=" { " />
-            <marker date="1491311217446" expanded="false" signature="668:674" ph=" }" />
-            <marker date="1491311217446" expanded="false" signature="722:733" ph=" { " />
-            <marker date="1491311217446" expanded="false" signature="760:766" ph=" }" />
-            <marker date="1491311217446" expanded="false" signature="796:807" ph=" { " />
-            <marker date="1491311217446" expanded="false" signature="820:826" ph=" }" />
-            <marker date="1491311217446" expanded="false" signature="866:877" ph=" { " />
-            <marker date="1491311217446" expanded="false" signature="896:902" ph=" }" />
-            <marker date="1491311217446" expanded="false" signature="930:941" ph=" { " />
-            <marker date="1491311217446" expanded="false" signature="952:958" ph=" }" />
-            <marker date="1491311217446" expanded="false" signature="994:1005" ph=" { " />
-            <marker date="1491311217446" expanded="false" signature="1020:1026" ph=" }" />
-            <marker date="1491311217446" expanded="false" signature="1057:1068" ph=" { " />
-            <marker date="1491311217446" expanded="false" signature="1084:1090" ph=" }" />
-            <marker date="1491311217446" expanded="false" signature="1134:1145" ph=" { " />
-            <marker date="1491311217446" expanded="false" signature="1170:1176" ph=" }" />
-            <marker date="1491311217446" expanded="false" signature="1213:1224" ph=" { " />
-            <marker date="1491311217446" expanded="false" signature="1241:1247" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/TrackInPlaylistDAOJPA.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/IUserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/UserServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="69" column="19" lean-forward="false" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/mySQLImpl/PlaylistDAOMySQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <marker date="1491209341934" expanded="true" signature="1068:1090" ph="SELECT * FRO... PLAYLIST" />
-            <marker date="1491209341934" expanded="true" signature="1783:1825" ph="SELECT * FRO... PLAYLIST" />
-            <marker date="1491209341934" expanded="true" signature="2527:2575" ph="SELECT * FRO... PLAYLIST" />
-            <marker date="1491209341934" expanded="true" signature="2527:2577" ph="SELECT * FRO... PLAYLIST" />
-            <marker date="1491209341934" expanded="true" signature="3184:3204" ph="UPDATE playl... " />
-            <marker date="1491209341934" expanded="true" signature="3184:3212" ph="UPDATE playl... " />
-            <marker date="1491209341934" expanded="true" signature="3184:3234" ph="UPDATE playl... " />
-            <marker date="1491209341934" expanded="true" signature="3190:3204" ph="INSERT INTO PLAYLIST... " />
-            <marker date="1491209341934" expanded="true" signature="3790:3832" ph="DELETE FROM " />
-            <marker date="1491209341934" expanded="true" signature="4360:4406" ph="INSERT INTO PLAYLIST... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/TrackInPlaylistDAONoSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="23" column="59" lean-forward="true" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/TrackDAONoSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/PlaylistDAONoSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="22" column="83" lean-forward="false" selection-start-line="22" selection-start-column="83" selection-end-line="22" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Playlist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="50" column="15" lean-forward="false" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
-          <folding>
-            <element signature="method#Playlist#1;class#Playlist#0" expanded="false" />
-            <element signature="e#1193#1194#0" expanded="true" />
-            <element signature="e#1226#1227#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/IPlaylistDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/PlaylistService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="26" column="79" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="79" />
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/TrackService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/TrackInPlaylistDAOJPA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-386">
-          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/PlaylistServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+        <state relative-caret-position="420">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1491301899289" expanded="true" signature="1615:1666" ph="DELETE FROM " />
+            <marker date="1491301899289" expanded="true" signature="2128:2158" ph="SELECT *FROM... track_in_playlist" />
+            <marker date="1491301899289" expanded="true" signature="2756:2808" ph="SELECT *FROM... track_in_playlist" />
+            <marker date="1491301899289" expanded="true" signature="3405:3473" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
