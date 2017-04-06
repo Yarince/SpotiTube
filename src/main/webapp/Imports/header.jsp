@@ -12,6 +12,6 @@
 
     <title>SpotiTube</title>
 
-    <jsp:include page="../css/css.jsp"></jsp:include>
+    <jsp:include page="../css/css.jsp"/>
 
 </head>

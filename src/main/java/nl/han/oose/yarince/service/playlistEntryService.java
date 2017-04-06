@@ -35,7 +35,8 @@ public class playlistEntryService {
     @Consumes("application/json")
     @Produces("text/html")
     public String addTrack(Playlist playlist) {
-        trackInPlaylistDAO.add(playlist.getPlaylistEntries().get(0), playlist.getPlaylistId());
-        return "Track added!";
+        PlaylistEntry playlistEntry = playlist.getPlaylistEntries().get(0);
+        trackInPlaylistDAO.add(playlistEntry, playlist.getPlaylistId());
+        return "Track "+playlistEntry.getTrack().getTrackId()+" added!";
     }
 }

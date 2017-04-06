@@ -1,12 +1,7 @@
 package nl.han.oose.yarince.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
-@Entity
 public class Track {
 
-    @Id
     private int trackId;
     private String performer,
             title,
@@ -35,35 +30,15 @@ public class Track {
         return performer;
     }
 
-    public void setPerformer(String performer) {
-        this.performer = performer;
-    }
-
     public String getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
+    public TrackType getTrackType() {
+        return trackType;
     }
 
     public long getDuration() {
         return duration;
-    }
-
-    public void setDuration(long duration) {
-        this.duration = duration;
-    }
-
-    public TrackType getTrackType() {
-        return trackType;
     }
 }

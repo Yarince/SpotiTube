@@ -14,8 +14,6 @@ public interface ITrackInPlaylistDAO {
 
     void deleteByPlaylist(int playlistID);
 
-    List<PlaylistEntry> getALL();
-
     List<PlaylistEntry> getByPlaylistId(int playlistID);
 
     void deleteTrack(PlaylistEntry playlistEntry, int playlistID);

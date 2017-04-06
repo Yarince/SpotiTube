@@ -7,6 +7,7 @@ public class Playlist {
     private int playlistId;
     private String owner;
     private String name;
+    @SuppressWarnings("FieldCanBeLocal")
     private long totalLength;
 
     private List<PlaylistEntry> playlistEntries;
@@ -22,7 +23,8 @@ public class Playlist {
     public Playlist() {
     }
 
-    private long getTotalLength() {
+    @SuppressWarnings("WeakerAccess")
+    public long getTotalLength() {
         long totalLength = 0;
         for (PlaylistEntry playlistEntry : this.playlistEntries) {
             Track track = playlistEntry.getTrack();
@@ -30,10 +32,6 @@ public class Playlist {
                 totalLength += track.getDuration();
         }
         return totalLength;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public List<PlaylistEntry> getPlaylistEntries() {

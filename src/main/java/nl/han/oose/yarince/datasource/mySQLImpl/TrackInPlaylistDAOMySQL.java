@@ -55,22 +55,6 @@ public class TrackInPlaylistDAOMySQL implements ITrackInPlaylistDAO {
     }
 
     @Override
-    public List<PlaylistEntry> getALL() {
-        List<PlaylistEntry> resultList = new ArrayList<>();
-        try (
-                Connection con = connection.getConnection();
-                PreparedStatement preparedStatement = con.prepareStatement("SELECT *FROM track_in_playlist");
-                ResultSet resultSet = preparedStatement.executeQuery()
-        ) {
-            while (resultSet.next())
-                resultList.add(getPlaylistEntryByResultSet(resultSet));
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return resultList;
-    }
-
-    @Override
     public List<PlaylistEntry> getByPlaylistId(int playlistID) {
         List<PlaylistEntry> resultList = new ArrayList<>();
         try (

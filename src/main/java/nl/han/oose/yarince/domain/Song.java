@@ -1,8 +1,5 @@
 package nl.han.oose.yarince.domain;
 
-import javax.persistence.Entity;
-
-@Entity
 public class Song extends Track {
     private String album;
 
@@ -17,9 +14,5 @@ public class Song extends Track {
 
     public String getAlbum() {
         return album;
-    }
-
-    public void setAlbum(String album) {
-        this.album = album;
     }
 }

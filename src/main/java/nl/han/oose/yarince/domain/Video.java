@@ -1,8 +1,5 @@
 package nl.han.oose.yarince.domain;
 
-import javax.persistence.Entity;
-
-@Entity
 public class Video extends Track {
 
     private int playCount;
@@ -23,24 +20,11 @@ public class Video extends Track {
         return playCount;
     }
 
-    public void setPlayCount(int playCount) {
-        this.playCount = playCount;
-    }
-
     public String getPublicationDate() {
         return publicationDate;
-    }
-
-    public void setPublicationDate(String publicationDate) {
-        this.publicationDate = publicationDate;
     }
 
     public String getDescription() {
         return description;
     }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
 }

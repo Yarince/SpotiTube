@@ -14,7 +14,7 @@ import java.util.Properties;
 @Default
 public class MySQLConnection implements IMySQLConnection {
 
-    private static Properties properties = new Properties();
+    private static final Properties properties = new Properties();
 
     static {
         try {
