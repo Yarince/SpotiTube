@@ -1,8 +1,5 @@
 package nl.han.oose.yarince.domain;
 
-import javax.persistence.Entity;
-
-@Entity
 public class Song extends Track {
     private String album;
 

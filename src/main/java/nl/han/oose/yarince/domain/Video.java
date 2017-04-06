@@ -1,8 +1,5 @@
 package nl.han.oose.yarince.domain;
 
-import javax.persistence.Entity;
-
-@Entity
 public class Video extends Track {
 
     private int playCount;

@@ -21,7 +21,6 @@ public class TrackDetailsViewPageController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doExecute(req, resp);
-        req.getRequestDispatcher("trackDetails.jsp").forward(req, resp);
     }
 
     @Override
@@ -47,5 +46,6 @@ public class TrackDetailsViewPageController extends HttpServlet {
                 req.setAttribute("VIDEO", video);
                 break;
         }
+        req.getRequestDispatcher("trackDetails.jsp").forward(req, resp);
     }
 }

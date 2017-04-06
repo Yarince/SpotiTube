@@ -8,7 +8,7 @@
 <body>
 
 <!-- Menu -->
-<jsp:include page="Imports/navbar.jsp"></jsp:include>
+<jsp:include page="Imports/navbar.jsp"/>
 <c:choose>
     <c:when test="${sessionScope.USER != null}">
         <meta http-equiv="refresh" content="0; url='<%=request.getContextPath()%>/home'" property=""/>
@@ -34,7 +34,7 @@
     </c:otherwise>
 </c:choose>
 
-<jsp:include page="Imports/footer.jsp"></jsp:include>
+<jsp:include page="Imports/footer.jsp"/>
 </body>
 
 </html>

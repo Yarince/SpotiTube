@@ -41,4 +41,8 @@ public class Track {
     public long getDuration() {
         return duration;
     }
+
+    public String getUrl() {
+        return url;
+    }
 }
