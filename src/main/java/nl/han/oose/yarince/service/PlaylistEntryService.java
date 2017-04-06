@@ -15,7 +15,7 @@ import javax.ws.rs.Produces;
  * Created by Yarince on 02/04/2017.
  */
 @Path("/playlistEntry")
-public class playlistEntryService {
+public class PlaylistEntryService {
 
     @Inject
     ITrackInPlaylistDAO trackInPlaylistDAO;
@@ -29,6 +29,8 @@ public class playlistEntryService {
         trackInPlaylistDAO.deleteTrack(playlistEntry, playlist.getPlaylistId());
         return "Track " + playlistEntry.getTrack().getTrackId() + " deleted!";
     }
+
+    //todo query parameter
 
     @POST
     @Path("/add")
