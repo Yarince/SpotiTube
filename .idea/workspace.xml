@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19946fd7-6344-45c0-b0e7-a7a737903742" name="Default" comment="onderzoek stap 1">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_0_0_M4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_0_0_M4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_0_0_M2.xml" />
+    <list default="true" id="19946fd7-6344-45c0-b0e7-a7a737903742" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SpotiTube.iml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/IJPAConnection.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/JPAConnection.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/PlaylistDAOJPA.java" afterPath="" />
@@ -12,62 +10,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/TrackInPlaylistDAOJPA.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/UserDAOJPA.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/persistence.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/mock/UserMockDAO.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/playlistEntryServiceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/datasource/noSQLImpl/PlaylistDAONoSQL.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/datasource/noSQLImpl/TrackDAONoSQL.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/datasource/noSQLImpl/TrackInPlaylistDAONoSQL.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/datasource/noSQLImpl/UserDAONoSQL.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/service/UserServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/service/mock/UserMockDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/service/playlistEntryServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/lib/junit-jupiter-api-5.0.0-M3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/lib/junit-platform-commons-1.0.0-M3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/lib/opentest4j-1.0.0-M1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/datasource/noSQLImpl/PlaylistDAONoSQL.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/datasource/noSQLImpl/TrackDAONoSQL.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/datasource/noSQLImpl/TrackInPlaylistDAONoSQL.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/datasource/noSQLImpl/UserDAONoSQL.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/datasource/ITrackInPlaylistDAO.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/datasource/ITrackInPlaylistDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/datasource/mySQLImpl/MySQLConnection.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/datasource/mySQLImpl/MySQLConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/datasource/mySQLImpl/TrackInPlaylistDAOMySQL.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/datasource/mySQLImpl/TrackInPlaylistDAOMySQL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/domain/Playlist.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/domain/Playlist.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/domain/Song.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/domain/Song.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/domain/Track.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/domain/Track.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/domain/TrackType.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/domain/TrackType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/service/PlaylistService.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/service/PlaylistService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/service/UserService.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/service/playlistEntryService.class" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/WEB-INF/classes/nl/han/oose/yarince/service/playlistEntryService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/datasource/ITrackInPlaylistDAO.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/datasource/ITrackInPlaylistDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/datasource/mySQLImpl/MySQLConnection.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/datasource/mySQLImpl/MySQLConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/datasource/mySQLImpl/TrackInPlaylistDAOMySQL.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/datasource/mySQLImpl/TrackInPlaylistDAOMySQL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/domain/Playlist.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/domain/Playlist.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/domain/Song.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/domain/Song.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/domain/Track.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/domain/Track.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/domain/TrackType.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/domain/TrackType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/service/PlaylistService.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/service/PlaylistService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/service/playlistEntryService.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/oose/yarince/service/playlistEntryService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SpotiTube_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SpotiTube_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpotiTube.iml" afterPath="$PROJECT_DIR$/SpotiTube.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/ITrackInPlaylistDAO.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/ITrackInPlaylistDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/mySQLImpl/MySQLConnection.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/mySQLImpl/MySQLConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/mySQLImpl/TrackInPlaylistDAOMySQL.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/mySQLImpl/TrackInPlaylistDAOMySQL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Playlist.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Playlist.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Song.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Song.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Track.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Track.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/TrackType.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/TrackType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Video.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Video.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/TrackDetailsViewPageController.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/TrackDetailsViewPageController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/playlistEntryService.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/playlistEntryService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/Imports/header.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/Imports/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/css/bootstrap-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/css/bootstrap-theme.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/target/SpotiTube-1.0-SNAPSHOT/fonts/glyphicons-halflings-regular.svg" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -180,65 +124,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="HomeViewPageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/HomeViewPageController.java">
+      <file leaf-file-name="Playlist.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Playlist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="playlistEntryService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/playlistEntryService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="39" column="63" lean-forward="false" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+            <state relative-caret-position="0">
+              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1009#1010#0" expanded="false" />
+                <element signature="e#1047#1048#0" expanded="false" />
+                <element signature="e#1079#1080#0" expanded="false" />
+                <element signature="e#1107#1108#0" expanded="false" />
+                <element signature="e#1138#1139#0" expanded="false" />
+                <element signature="e#1165#1166#0" expanded="false" />
+                <element signature="e#1199#1200#0" expanded="false" />
+                <element signature="e#1232#1233#0" expanded="false" />
+                <marker date="1491497346171" expanded="true" signature="896:955" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlaylistViewPageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/presentation/controller/PlaylistViewPageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-189">
-              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Video.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Video.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <element signature="method#Video#1;class#Video#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="494" column="12" lean-forward="false" selection-start-line="494" selection-start-column="12" selection-end-line="494" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Track.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Track.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Track.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            <state relative-caret-position="661">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
                 <element signature="e#839#840#0" expanded="true" />
                 <element signature="e#870#871#0" expanded="true" />
@@ -247,49 +157,106 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UserServiceTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/UserServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="30" column="16" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Video.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Video.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+              <folding>
+                <element signature="e#624#625#0" expanded="false" />
+                <element signature="e#656#657#0" expanded="false" />
+                <element signature="e#698#699#0" expanded="false" />
+                <element signature="e#736#737#0" expanded="false" />
+                <element signature="e#774#775#0" expanded="false" />
+                <element signature="e#808#809#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrackService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/TrackService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#534#535#0" expanded="false" />
+                <element signature="e#580#581#0" expanded="false" />
+                <element signature="e#1444#1445#0" expanded="false" />
+                <element signature="e#1494#1495#0" expanded="false" />
+                <element signature="e#1616#1617#0" expanded="false" />
+                <element signature="e#1678#1679#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="53" column="21" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/Imports/header.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="39" lean-forward="false" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TrackInPlaylistDAOMySQL.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/mySQLImpl/TrackInPlaylistDAOMySQL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="42">
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
-                <marker date="1491496007887" expanded="true" signature="893:986" ph="INSERT INTO PLAYLIST... " />
-                <marker date="1491496007887" expanded="true" signature="1617:1653" ph="DELETE from " />
-                <marker date="1491496007887" expanded="true" signature="1617:1668" ph="DELETE FROM " />
-                <marker date="1491496007887" expanded="true" signature="1617:1669" ph="DELETE FROM " />
-                <marker date="1491496007887" expanded="true" signature="1617:1671" ph="DELETE from " />
-                <marker date="1491496007887" expanded="true" signature="2153:2205" ph="SELECT *FROM... track_in_playlist" />
-                <marker date="1491496007887" expanded="true" signature="2802:2870" ph="DELETE FROM " />
+                <marker date="1491497361135" expanded="true" signature="3427:3458" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrackDAOMySQL.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/mySQLImpl/TrackDAOMySQL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <marker date="1491243978771" expanded="true" signature="908:927" ph="SELECT * FRO... TRACK" />
+                <marker date="1491243978771" expanded="true" signature="1502:1606" ph="SELECT * FRO... TRACK" />
+                <marker date="1491243978771" expanded="true" signature="1545:1605" ph="SELECT TRACK... track_in_playlist" />
+                <marker date="1491243978771" expanded="true" signature="2245:2366" ph="SELECT * FRO... TRACK" />
+                <marker date="1491243978771" expanded="true" signature="2288:2348" ph="SELECT TRACK... track_in_playlist" />
+                <marker date="1491243978771" expanded="true" signature="3046:3081" ph="SELECT * FRO... TRACK" />
+                <marker date="1491243978771" expanded="true" signature="3673:3711" ph="SELECT * FRO... track" />
+                <marker date="1491243978771" expanded="true" signature="4304:4404" ph="SELECT * FRO... track" />
+                <marker date="1491243978771" expanded="true" signature="4343:4403" ph="SELECT TRACK... track_in_playlist" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrackType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/TrackType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="e#369#370#0" expanded="false" />
+                <element signature="e#400#401#0" expanded="false" />
+                <element signature="e#435#436#0" expanded="false" />
+                <element signature="e#466#467#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -331,6 +298,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -493,6 +465,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -662,10 +636,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpotiTube" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SpotiTube" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yarince" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datasource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1383,6 +1385,7 @@
       <workItem from="1490878376210" duration="6000" />
       <workItem from="1490878560025" duration="32766000" />
       <workItem from="1491492488672" duration="3210000" />
+      <workItem from="1491497386521" duration="17000" />
     </task>
     <task id="LOCAL-00001" summary="Geweldig, en nu werken!">
       <created>1490886831125</created>
@@ -1504,7 +1507,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271005000" />
+    <option name="totallyTimeSpent" value="271038000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1517,7 +1520,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="22" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -1528,7 +1530,6 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30124575" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16809882" sideWeight="0.49134487" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.083243825" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
@@ -1536,28 +1537,29 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997735" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="22" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26274067" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26274067" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28652322" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16809882" sideWeight="0.50865513" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22502685" sideWeight="0.5" order="16" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23469388" sideWeight="0.5" order="16" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17024705" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4688562" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="23" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="25" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30124575" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33408833" sideWeight="0.49785176" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16809882" sideWeight="0.50865513" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4688562" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1620,7 +1622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1643,21 +1644,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/service/TrackService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="252">
+          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#534#535#0" expanded="false" />
+            <element signature="e#580#581#0" expanded="false" />
+            <element signature="e#1444#1445#0" expanded="false" />
+            <element signature="e#1494#1495#0" expanded="false" />
+            <element signature="e#1616#1617#0" expanded="false" />
+            <element signature="e#1678#1679#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/mock/TrackInPlaylistDAONoSQL.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/mock/UserMockDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/mock/UserMockDAO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/noSQLImpl/TrackInPlaylistDAONoSQL.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/IJPAConnection.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1670,23 +1672,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/persistence.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/UserDAOJPA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1694,7 +1687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1702,15 +1694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/TrackDAOJPA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="39" column="181" lean-forward="false" selection-start-line="39" selection-start-column="181" selection-end-line="39" selection-end-column="181" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1718,7 +1701,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#369#370#0" expanded="false" />
+            <element signature="e#400#401#0" expanded="false" />
+            <element signature="e#435#436#0" expanded="false" />
+            <element signature="e#466#467#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1726,23 +1714,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/playlistEntryServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/playlistEntryServiceTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/PlaylistServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1750,14 +1729,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="51" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/oose/yarince/service/UserServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        <state relative-caret-position="441">
+          <caret line="30" column="16" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
@@ -1768,7 +1746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="0" column="301148" lean-forward="false" selection-start-line="0" selection-start-column="301148" selection-end-line="0" selection-end-column="301148" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1804,7 +1781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1850,12 +1826,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Playlist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        <state relative-caret-position="0">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding>
-            <element signature="e#169#205#0" expanded="true" />
-            <element signature="method#Playlist#1;class#Playlist#0" expanded="false" />
-            <element signature="e#611#644#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="false" />
+            <element signature="e#1047#1048#0" expanded="false" />
+            <element signature="e#1079#1080#0" expanded="false" />
+            <element signature="e#1107#1108#0" expanded="false" />
+            <element signature="e#1138#1139#0" expanded="false" />
+            <element signature="e#1165#1166#0" expanded="false" />
+            <element signature="e#1199#1200#0" expanded="false" />
+            <element signature="e#1232#1233#0" expanded="false" />
+            <marker date="1491497346171" expanded="true" signature="896:955" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1872,8 +1854,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Track.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        <state relative-caret-position="661">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="e#839#840#0" expanded="true" />
             <element signature="e#870#871#0" expanded="true" />
@@ -1885,15 +1867,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <marker date="1491496007887" expanded="true" signature="893:986" ph="INSERT INTO PLAYLIST... " />
-            <marker date="1491496007887" expanded="true" signature="1617:1653" ph="DELETE from " />
-            <marker date="1491496007887" expanded="true" signature="1617:1668" ph="DELETE FROM " />
-            <marker date="1491496007887" expanded="true" signature="1617:1669" ph="DELETE FROM " />
-            <marker date="1491496007887" expanded="true" signature="1617:1671" ph="DELETE from " />
-            <marker date="1491496007887" expanded="true" signature="2153:2205" ph="SELECT *FROM... track_in_playlist" />
-            <marker date="1491496007887" expanded="true" signature="2802:2870" ph="DELETE FROM " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1915,10 +1889,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/domain/Video.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="525">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
-            <element signature="method#Video#1;class#Video#0" expanded="false" />
+            <element signature="e#624#625#0" expanded="false" />
+            <element signature="e#656#657#0" expanded="false" />
+            <element signature="e#698#699#0" expanded="false" />
+            <element signature="e#736#737#0" expanded="false" />
+            <element signature="e#774#775#0" expanded="false" />
+            <element signature="e#808#809#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1933,9 +1912,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="53" column="21" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="42">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <marker date="1491497361135" expanded="true" signature="3427:3458" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1951,6 +1932,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/oose/yarince/datasource/JPAImpl/TrackDAOJPA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="39" column="181" lean-forward="false" selection-start-line="39" selection-start-column="181" selection-end-line="39" selection-end-column="181" />
           <folding />
         </state>
       </provider>
